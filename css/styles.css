@@ -1,0 +1,69 @@
+.content {
+  margin: auto;
+  margin-top: 4vw;
+  width: 65vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.entry {
+  margin: 2vw 0 2vw 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 3vw;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.imagegroup {
+  margin: 2vw 3vw 2vw 3vw;
+}
+
+.imagegroup .caption {
+  font-style: oblique;
+  color: gray;
+  font-size: 1vw;
+  margin-left: 3vw;
+}
+
+.image {
+  margin: 5px;
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #c5c5c5;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.imagesize5 {
+  width: 15%;
+}
+
+.imagesize4 {
+  width: 30%;
+}
+
+.imagesize3 {
+  width: 45%;
+}
+
+.imagesize2 {
+  width: 60%;
+}
+
+.imagesize1 {
+  width: 95%;
+}
+
+.imagelink:hover {
+  -webkit-box-shadow: -5px 10px 10px #eeeeee;
+          box-shadow: -5px 10px 10px #eeeeee;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
