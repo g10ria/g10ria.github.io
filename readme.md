@@ -1,1 +1,1 @@
-my dev blog for limeade. in heavy need of some styling.
+my dev blog for the limeade project.
