@@ -1,0 +1,42 @@
+.content {
+  margin: auto;
+  margin-top: 4vw;
+  width: 65vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+.tilecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tile {
+  margin: 10px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-width: 1px;
+  -webkit-box-shadow: -2px 2px 3px #eeeeee;
+          box-shadow: -2px 2px 3px #eeeeee;
+  cursor: pointer;
+}
+
+.tile .tilepic {
+  margin: 5px;
+}
+
+.tile .tilename {
+  text-align: center;
+  font-size: 2vh;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=art.css.map */

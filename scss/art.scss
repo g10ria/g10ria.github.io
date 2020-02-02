@@ -1,0 +1,26 @@
+@import "all";
+
+.tilecontainer {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+
+.tile {
+   margin: 10px;
+   border-radius: 3px;
+   border-style: solid;
+   border-color: rgb(235, 235, 235);
+   border-width: 1px;
+   box-shadow: -2px 2px 3px #eeeeee;
+   cursor: pointer;
+   .tilepic {
+      margin: 5px;
+   }
+   .tilename {
+      text-align: center;
+      font-size: 2vh;
+      margin: 5px;
+      margin-bottom: 10px;
+   }
+}
