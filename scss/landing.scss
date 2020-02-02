@@ -4,6 +4,12 @@ body {
    background-color: rgb(235, 235, 235);
 }
 
+@keyframes marquee {
+  0% { top: 0; }
+  50% { top: -500%; }
+  100% { top: 0;}
+}
+
 .content {
     
     margin: 4vw;
@@ -22,11 +28,7 @@ body {
         max-width: 105vh;
         margin-left: 20px;
     }
-    @keyframes marquee {
-  0% { top: 0; }
-  50% { top: -500%; }
-  100% { top: 0;}
-}
+    
     .photos-container {
         position: fixed;
         top: 0;
