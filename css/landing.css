@@ -24,27 +24,98 @@ body {
   margin-left: 20px;
 }
 
+@-webkit-keyframes marquee {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -500%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -500%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.content .photos-container {
+  position: fixed;
+  top: 0;
+  right: 325px;
+  width: 25vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content .photos-container .slideshow-container {
+  -webkit-animation: marquee 150s linear infinite;
+          animation: marquee 150s linear infinite;
+  display: block;
+  height: 200vh;
+  position: absolute;
+}
+
+.content .photos-container .slideshow-container .photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  line-height: 1;
+}
+
 .content .nav-container {
   position: fixed;
   top: 0;
   right: 50px;
-  width: 170px;
+  width: 200px;
   background-color: #fafafa;
   height: 100vh;
   padding: 50px 0px;
 }
 
 .content .nav-container .nav-option {
+  white-space: nowrap;
   padding: 10px 30px;
   font-weight: 600;
   font-size: 2vw;
   cursor: pointer;
-  -webkit-transition: background-color .2s;
-  transition: background-color .2s;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
 }
 
 .content .nav-container .nav-option:hover {
-  background-color: #f0f0f0;
+  background-color: #ebebeb;
+}
+
+.content .nav-container .nav-option .nav-arrow {
+  opacity: 0;
+  margin-left: 0px;
+  -webkit-transition: opacity .2s, margin-left .5s;
+  transition: opacity .2s, margin-left .5s;
+}
+
+.content .nav-container .nav-option .arrow-appear {
+  opacity: 100%;
+  margin-left: 5px;
+}
+
+.content .nav-container .spacer {
+  width: 100%;
+  height: 25px;
+}
+
+.content .nav-container .nav-option-small {
+  font-size: 1.5vw;
 }
 
 .content .media-container {
@@ -59,12 +130,13 @@ body {
   margin: 0 3px;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: background-color .2s;
-  transition: background-color .2s;
+  -webkit-transition: width .2s, height .2s;
+  transition: width .2s, height .2s;
 }
 
 .content .media-container .media-icon:hover {
-  background-color: white;
+  width: 50px;
+  height: 50px;
 }
 
 .content .media-container .media-icon-github {

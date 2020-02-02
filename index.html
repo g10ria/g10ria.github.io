@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <script src="./js/landing.js"></script>
+   <script src="./js/landing.js" defer></script>
    <link rel="stylesheet" type="text/css" href="./css/landing.css">
    <title>GZ</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -15,26 +15,69 @@
     <div class="name firstname">GLORIA&nbsp;</div>
     <div class="name lastname">ZHU</div>
     
-    <div class="description">I'm a sophomore at The Harker School in San Jose, California. I love art and code and everything in between - games, graphic design, etc.
+    <div class="description">Sophomore @ The Harker School in San Jose, California.
+    <br>
+    I love art and computers and everything in between 👋
     <br><br>
     See my work on the right or scroll to read more about me &#128522;
     </div>
 
+    <div class="photos-container">
+        <div class="slideshow-container">
+            <div>
+                <img src="./pix/landing/autumn.JPG" class="photo">
+                <img src="./pix/landing/canyon.JPG" class="photo">
+                <img src="./pix/landing/cheesecake.JPG" class="photo">
+                <!-- <img src="./pix/landing/field.JPG" class="photo"> -->
+                <img src="./pix/landing/frc.JPG" class="photo">
+                <img src="./pix/landing/gouache.JPG" class="photo">
+                <img src="./pix/landing/mochi.JPG" class="photo">
+                <img src="./pix/landing/mountain.JPG" class="photo">
+                <img src="./pix/landing/pagoda.JPG" class="photo">
+                <img src="./pix/landing/peppers.JPG" class="photo">
+                <img src="./pix/landing/railroad.JPG" class="photo">
+                <img src="./pix/landing/robot.JPG" class="photo">
+                <img src="./pix/landing/ruins.JPG" class="photo">
+                <img src="./pix/landing/sausage.JPG" class="photo">
+                <img src="./pix/landing/store.JPG" class="photo">
+                <img src="./pix/landing/teapot.JPG" class="photo">
+                <img src="./pix/landing/trainstation.JPG" class="photo">
+                <img src="./pix/landing/village.JPG" class="photo">
+                <img src="./pix/landing/water.JPG" class="photo">
+            </div>
+        </div>
+    </div>
+
     <div class="nav-container">
-        <div class="nav-option">
+        <div class="nav-option" data-optionName="code">
             CODE
-        </div>
-        <div class="nav-option">
-            DESIGN
-        </div>
-        <div class="nav-option">
-            ART
-            <!-- <span class="nav-arrow">
+            <span class="nav-arrow">
                 &nbsp;&#8594;
-            </span> -->
+            </span>
         </div>
-        <div class="nav-option">
+        <div class="nav-option" data-optionName="design">
+            DESIGN
+            <span class="nav-arrow">
+                &nbsp;&#8594;
+            </span>
+        </div>
+        <div class="nav-option" data-optionName="art">
+            ART
+            <span class="nav-arrow">
+                &nbsp;&#8594;
+            </span>
+        </div>
+        <div class="nav-option" data-optionName="photos">
             PHOTOS
+            <span class="nav-arrow">
+                &nbsp;&#8594;
+            </span>
+        </div>
+        <div class="spacer"></div>
+        <div class="nav-option nav-option-small" data-optionName="contact">CONTACT
+            <span class="nav-arrow">
+                &nbsp;&#8594;
+            </span>
         </div>
     </div>
 
