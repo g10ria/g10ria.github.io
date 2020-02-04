@@ -14,6 +14,7 @@ body {
     
     margin: 4vw;
     margin-top: 2vw;
+    margin-bottom: 7vw;
 
     user-select: none;
 
@@ -27,11 +28,80 @@ body {
         max-width: 105vh;
         margin-left: 20px;
     }
+    .media-container {
+        margin: 20px;
+        .media-icon {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+            margin: 0 3px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: width .2s, height .2s;
+            &:hover {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .media-icon-github {
+            background-image: url("../pix/Github-512.png");
+            border-radius: 50%;
+        }
+        .media-icon-linkedin {
+            background-image: url("../pix/linkedin.png");
+        }
+        .media-icon-instagram {
+            background-image: url("../pix/Instagram-512.png");
+        }
+    }
+
+    .spacer {
+        width: 50px;
+        height: 300px;
+    }
+
+    .card-container {
+        margin: 30px;
+        margin-bottom: 50px;   
+        max-width: 85vh;
+        margin-left: 25px;
+        background-color: white;
+        padding: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 12px rgb(236, 236, 236);
+        
+        .card-title {
+            font-size: 2vw;
+            font-family: "Roboto Condensed", sans-serif;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            text-decoration-color: rgb(243, 155, 54);
+        }
+        .card-description {
+            text-decoration: none !important;
+        }
+        .card-photo {
+            width: 70%;
+            height: auto;
+            margin: 30px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            border-radius: 3px;
+            box-shadow: 5px 5px 12px rgb(236, 236, 236);
+            cursor: pointer;
+            transition: opacity .1s, box-shadow .2s;
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 5px 5px 12px rgb(223, 223, 223);
+            }
+        } 
+    }
     
     .photos-container {
         position: fixed;
         top: 0;
-        right: 325px;
+        right: 300px;
         width: 25vh;
         height: 100%;
         overflow: hidden;
@@ -87,31 +157,5 @@ body {
             font-size: 1.5vw;
         }
     }
-    .media-container {
-        margin: 20px;
-        .media-icon {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-size: contain;
-            margin: 0 3px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: width .2s, height .2s;
-            &:hover {
-                width: 50px;
-                height: 50px;
-            }
-        }
-        .media-icon-github {
-            background-image: url("../pix/Github-512.png");
-            border-radius: 50%;
-        }
-        .media-icon-linkedin {
-            background-image: url("../pix/linkedin.png");
-        }
-        .media-icon-instagram {
-            background-image: url("../pix/Instagram-512.png");
-        }
-    }
+    
 }
