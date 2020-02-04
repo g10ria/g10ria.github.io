@@ -1,4 +1,8 @@
 .content {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=all.css.map */

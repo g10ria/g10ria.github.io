@@ -2,6 +2,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ebebeb;
 }
@@ -74,16 +78,16 @@ body {
 }
 
 .content .media-container .media-icon-github {
-  background-image: url("../pix/Github-512.png");
+  background-image: url("../pix/icons/github.png");
   border-radius: 50%;
 }
 
 .content .media-container .media-icon-linkedin {
-  background-image: url("../pix/linkedin.png");
+  background-image: url("../pix/icons/linkedin.png");
 }
 
 .content .media-container .media-icon-instagram {
-  background-image: url("../pix/Instagram-512.png");
+  background-image: url("../pix/icons/instagram.png");
 }
 
 .content .spacer {
@@ -91,11 +95,17 @@ body {
   height: 300px;
 }
 
+.content .card-container-anchor {
+  margin: 5px;
+  width: 100%;
+  height: 5px;
+}
+
 .content .card-container {
   margin: 30px;
-  margin-bottom: 50px;
   max-width: 85vh;
   margin-left: 25px;
+  margin-bottom: 50px;
   background-color: white;
   padding: 30px;
   border-radius: 5px;
@@ -108,17 +118,35 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 10px;
   text-decoration: underline;
-  -webkit-text-decoration-color: #f39b36;
-          text-decoration-color: #f39b36;
+}
+
+.content .card-container .card-title a {
+  color: black !important;
+  -webkit-text-decoration-color: #f39b36 !important;
+          text-decoration-color: #f39b36 !important;
+  -webkit-transition: color .1s;
+  transition: color .1s;
+}
+
+.content .card-container .card-title a:hover {
+  color: #ce7816 !important;
 }
 
 .content .card-container .card-description {
   text-decoration: none !important;
 }
 
-.content .card-container .card-photo {
+.content .card-container .card-photo-horizontal {
   width: 70%;
   height: auto;
+}
+
+.content .card-container .card-photo-vertical {
+  width: 40%;
+  height: auto;
+}
+
+.content .card-container .card-photo {
   margin: 30px;
   margin-bottom: 20px;
   margin-left: 0;
