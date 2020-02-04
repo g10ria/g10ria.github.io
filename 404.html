@@ -7,15 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/projects.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/projects.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/404.css">
     <title>GZ - Projects</title>
+    
 </head>
 
 <body>
     <div class="content">
-        404 page coming soon!
+        <div class="title">
+            404
+        </div>
+        <div class="description">
+            Sorry, there's nothing here :(
+        </div>
+        <div class="button">
+            BACK TO THE KNOWN LAND
+        </div>
     </div>
 
 </body>
-
+<script>
+    document.getElementsByClassName("button")[0].addEventListener("click", function() {
+        window.location.href = "./index.html"
+    })
+</script>
 </html>

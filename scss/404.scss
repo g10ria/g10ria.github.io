@@ -1,0 +1,31 @@
+@import "all";
+
+body {
+    background-color:rgb(235, 235, 235);
+}
+
+.content {
+    margin: 10vw;
+    text-align: center;
+    .title {
+        font-size: 5vw;
+        font-weight: 900;
+    }
+    .description {
+        margin-top: 20px;
+    }
+    .button {
+        font-family: "Roboto Condensed", sans-serif;
+        margin: 2vw;
+        padding: 1vw 2vw;
+        border-radius: 5px;
+        background-color: white;
+        display: inline-block;
+        box-shadow: 5px 5px 12px rgb(226, 226, 226);
+        cursor: pointer;
+        &:hover {
+            color: white;
+            background-color: gray;
+        }
+    }
+}

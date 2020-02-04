@@ -1,10 +1,8 @@
 # Todos
 - Landing
-    - connect links
-    - add photo
     - add description cards
-    - load animations
+    - onload animations
     - responsivenes
 - Other pages :p
     - refactoring
-    - creating
+    - actually making them

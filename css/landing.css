@@ -1,3 +1,7 @@
+.content {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
   background-color: #ebebeb;
 }
@@ -29,7 +33,6 @@ body {
 .content {
   margin: 4vw;
   margin-top: 2vw;
-  font-family: 'Source Sans Pro', sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

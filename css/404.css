@@ -1,0 +1,39 @@
+.content {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: #ebebeb;
+}
+
+.content {
+  margin: 10vw;
+  text-align: center;
+}
+
+.content .title {
+  font-size: 5vw;
+  font-weight: 900;
+}
+
+.content .description {
+  margin-top: 20px;
+}
+
+.content .button {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 2vw;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+  background-color: white;
+  display: inline-block;
+  -webkit-box-shadow: 5px 5px 12px #e2e2e2;
+          box-shadow: 5px 5px 12px #e2e2e2;
+  cursor: pointer;
+}
+
+.content .button:hover {
+  color: white;
+  background-color: gray;
+}
+/*# sourceMappingURL=404.css.map */
