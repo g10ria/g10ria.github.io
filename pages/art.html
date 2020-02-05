@@ -3,25 +3,82 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <script src="../js/art.js" defer></script>
-   <link rel="stylesheet" type="text/css" href="../css/art.css">
-   <title>GZ - Art</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/art.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../css/art.css">
+    <title>GZ - Art</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-   <div class="content">
-       this page coming soon!
-      <!-- <div class="tilecontainer">
-         <div class="tile">
-            <img class="tilepic" src="../pix/day1-planning.JPG">
-            <div class="tilename">Robotics</div>
-         </div>
-         
-      </div> -->
-   </div>
+
+    <div class="content">
+        <span id="backarrow">&#11104;</span>
+        <span class="title">
+            ART - Traditional Mediums [unfinished]
+        </span>
+        <div class="tilecontainer">
+
+            <div class="tilecontainer-column">
+                <div class="tile">
+                    <img src="../pix/art/handsy.jpg" class="tilepic" data-link="handsy" data-orientation="horizontal" data-name="Handsy"
+                        data-description="Life study, 2B graphite, done during an AP Euro lecture about socialism."
+                        data-awards="Scholastic Silver in Drawing and Illustration">
+                </div>
+                
+                <div class="tile">
+                    <img src="../pix/art/judgemental_roman.jpg" class="tilepic" data-link="judgemental_roman"
+                        data-orientation="vertical" data-name="Judge"
+                        data-description="Still life, graphite on paper, done in the studio."
+                        data-awards="Scholastic Silver in Drawing and Illustration">
+                </div>
+                
+                <div class="tile">
+                    <img src="../pix/art/lost_in_space.jpg" class="tilepic" data-link="lost_in_space" data-orientation="horizontal"
+                        data-name="Lost In Space"
+                        data-description="Study from imagination and the movie Interstellar, gouache on watercolor paper, done at home."
+                        data-awards="">
+                </div>
+
+            </div>
+
+            <div class="tilecontainer-column">
+
+                <div class="tile">
+                    <img src="../pix/art/metallica.jpg" class="tilepic" data-link="metallica" data-orientation="vertical"
+                        data-name="Motorcycles"
+                        data-description="Study from picture, red gel pen and gray Copic marker (C3) on paper, done during a Crash Course video in AP Euro."
+                        data-awards="Scholastic Silver in Drawing and Illustration">
+                </div>
+
+                <div class="tile">
+                    <img src="../pix/art/blue_dress.jpg" class="tilepic" data-link="blue_dress" data-orientation="vertical"
+                        data-name="Blue" data-description="Study from a picture, gouache on watercolor paper, done at home."
+                        data-awards="">
+                </div>
+                
+            </div>            
+
+        </div>
+
+        <!-- <div>
+            Back to top 
+        </div> -->
+    </div>
+
+    <div id="picDialog" class="no-show">
+        <img id="picInDialog">
+        <div id="textInDialog">
+            <div id="titleInDialog"></div>
+            <div id="descriptionInDialog"></div>
+        </div>
+        <div id="closebuttonInDialog">&#10005;</div>
+    </div>
 
 </body>
+
 </html>

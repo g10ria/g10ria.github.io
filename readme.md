@@ -1,8 +1,9 @@
 # Todos
+- add favicon
 - Landing
-    - add description cards
-    - onload animations
-    - responsivenes
+    - add links to description cards
+    - onload animations (remove # link)
+    - responsivenes!!
 - Other pages :p
     - refactoring
     - actually making them

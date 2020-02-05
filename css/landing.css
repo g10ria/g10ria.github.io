@@ -128,10 +128,6 @@ body {
   transition: color .1s;
 }
 
-.content .card-container .card-title a:hover {
-  color: #ce7816 !important;
-}
-
 .content .card-container .card-description {
   text-decoration: none !important;
 }

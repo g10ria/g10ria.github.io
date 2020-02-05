@@ -2,6 +2,10 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .entry {
   margin: 2vw 0 2vw 0;
 }
