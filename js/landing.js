@@ -59,3 +59,18 @@ document.getElementById("link-github").addEventListener("click", function () {
 document.getElementById("link-limeade").addEventListener("click", function () {
     openNewTabTo("./pages/limeade.html")
 })
+
+let nav = document.getElementsByClassName("nav-container")[0]
+let burger = document.getElementById("hamburger")
+burger.addEventListener("click", function() {
+    if (burger.classList.contains("rotated")) {
+        burger.classList.remove("rotated")
+    } else {
+        burger.classList.add("rotated");
+    }
+    if (nav.classList.contains("appear")) {
+        nav.classList.remove("appear")
+    } else {
+        nav.classList.add("appear")
+    }
+})
