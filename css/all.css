@@ -1,5 +1,5 @@
 .content {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -12,5 +12,21 @@ body {
       -ms-user-select: none;
           user-select: none;
   background-color: #ebebeb;
+}
+
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
 }
 /*# sourceMappingURL=all.css.map */

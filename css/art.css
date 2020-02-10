@@ -1,5 +1,5 @@
 .content {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -14,18 +14,41 @@ body {
   background-color: #ebebeb;
 }
 
-#backbutton {
-  position: fixed;
-  top: 10px;
-  left: 10px;
+#copyright {
+  text-align: center;
   font-family: "Roboto Condensed", sans-serif;
 }
 
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
+}
+
 .content {
-  width: 60%;
+  width: 60vw;
   margin: 4vw auto 4vw auto;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    margin-top: 5vw;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-top: 10vw;
+    width: 90vw;
+  }
 }
 
 .content #backarrow {
@@ -33,12 +56,24 @@ body {
   line-height: 70%;
   color: #202020;
   cursor: pointer;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .content #backarrow:hover {
   color: #505050;
+}
+
+@media (max-width: 1200px) {
+  .content #backarrow {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content #backarrow {
+    font-size: 7vw;
+  }
 }
 
 .content .title {
@@ -46,14 +81,26 @@ body {
   font-size: 2vw;
 }
 
+@media (max-width: 1200px) {
+  .content .title {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .title {
+    font-size: 7vw;
+  }
+}
+
 .tilecontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column row;
-          flex-flow: column row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -72,8 +119,8 @@ body {
   margin-bottom: 20px;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: opacity .1s;
-  transition: opacity .1s;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 .tile .tilepic:hover {
@@ -86,10 +133,24 @@ body {
   top: 14vh;
 }
 
+@media (max-width: 1200px) {
+  .wideDialog {
+    width: 94vw;
+    left: 3vw;
+  }
+}
+
 .tallDialog {
   width: 70vw;
   left: 15vw;
   top: 7vh;
+}
+
+@media (max-width: 1200px) {
+  .tallDialog {
+    width: 80vw;
+    left: 10vw;
+  }
 }
 
 #picDialog {
@@ -99,10 +160,29 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 1200px) {
+  #picDialog {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+  }
+}
+
 #picDialog #picInDialog {
   height: auto;
   border-radius: 3px;
   display: inline-block;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  #picDialog #picInDialog {
+    width: 90vw !important;
+    border-radius: 5px;
+  }
 }
 
 #picDialog .verticalPic {
@@ -110,9 +190,24 @@ body {
   margin: 7vh;
 }
 
+@media (max-width: 1200px) {
+  #picDialog .verticalPic {
+    margin: 5vw;
+    margin-top: 75px;
+    max-height: none;
+  }
+}
+
 #picDialog .horizontalPic {
   margin: 7vh;
   width: 35vw;
+}
+
+@media (max-width: 1200px) {
+  #picDialog .horizontalPic {
+    margin: 5vw;
+    margin-top: 125px !important;
+  }
 }
 
 #picDialog #textInDialog {
@@ -123,9 +218,39 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+@media (max-width: 1200px) {
+  #picDialog #textInDialog {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    right: 0;
+    top: 0;
+    font-size: 2.75vw;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #picDialog #textInDialog {
+    font-size: 5vw;
+  }
+}
+
 #picDialog #textInDialog #titleInDialog {
   font-size: 2.5vw;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  #picDialog #textInDialog #titleInDialog {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #picDialog #textInDialog #titleInDialog {
+    font-size: 10vw;
+  }
 }
 
 #picDialog #closebuttonInDialog {
@@ -134,12 +259,28 @@ body {
   right: 50px;
   top: 7vh;
   cursor: pointer;
-  -webkit-transition: opacity .1s;
-  transition: opacity .1s;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
 }
 
 #picDialog #closebuttonInDialog:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 1200px) {
+  #picDialog #closebuttonInDialog {
+    font-size: 3vw;
+    top: 30px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  #picDialog #closebuttonInDialog {
+    font-size: 8vw;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .no-show {

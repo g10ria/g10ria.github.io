@@ -1,36 +1,49 @@
 @import "all";
 
-#backbutton {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    font-family: "Roboto Condensed", sans-serif;
-}
-
 .content {
-  width: 60%;
+  width: 60vw;
   margin: 4vw auto 4vw auto;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+  @media (max-width: $large) {
+    margin-top: 5vw;
+    width: 80vw;
+  }
+  @media (max-width: $small) {
+    margin-top: 10vw;
+    width: 90vw;
+  }
   #backarrow {
-      font-size: 2vw;
-      line-height: 70%;
-      color: rgb(32, 32, 32);
-      cursor: pointer;
-      transition: color .2s;
-      &:hover {
-        color: rgb(80, 80, 80);
-      }
+    font-size: 2vw;
+    line-height: 70%;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    transition: color 0.2s;
+    &:hover {
+      color: rgb(80, 80, 80);
+    }
+    @media (max-width: $large) {
+      font-size: 2.75vw;
+    }
+    @media (max-width: $small) {
+      font-size: 7vw;
+    }
   }
   .title {
-      margin: 10px;
-      font-size: 2vw;
+    margin: 10px;
+    font-size: 2vw;
+    @media (max-width: $large) {
+      font-size: 2.75vw;
+    }
+    @media (max-width: $small) {
+      font-size: 7vw;
+    }
   }
 }
 
 .tilecontainer {
   display: flex;
-  flex-flow: column row;
+  flex-flow: row wrap;
   justify-content: center;
   margin-top: 40px;
 }
@@ -48,72 +61,130 @@
     margin-bottom: 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: opacity .1s;
+    transition: opacity 0.1s;
     &:hover {
-        opacity: 0.8;
+      opacity: 0.8;
     }
   }
 }
 
 .wideDialog {
-    width: 86vw;
-    left: 7vw;
-    top: 14vh;
+  width: 86vw;
+  left: 7vw;
+  top: 14vh;
+  @media (max-width: $large) {
+      width: 94vw;
+      left: 3vw;
+    }
 }
 .tallDialog {
-    width: 70vw;
-    left: 15vw;
-    top: 7vh;
+  width: 70vw;
+  left: 15vw;
+  top: 7vh;
+  @media (max-width: $large) {
+      width: 80vw;
+      left: 10vw;
+    }
 }
 #picDialog {
-    z-index: 1;
-    background-color: white;
-    position: fixed;
-    border-radius: 5px;
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  border-radius: 5px;
 
-    #picInDialog {
-        height: auto;
-        border-radius: 3px;
-        display: inline-block;
+  @media (max-width: $large) {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: scroll;
     }
-    .verticalPic {
-        max-height: 71vh;
-        margin: 7vh;
-    }
-    .horizontalPic {
-        margin: 7vh;
-        width: 35vw;
-    }
-    #textInDialog {
-        position: absolute;
-        width: 40%;
-        right: 14vh;
-        top: 7vh;
-        font-family: "Source Sans Pro", sans-serif;
 
-        #titleInDialog {
-            font-size: 2.5vw;
-            margin-bottom: 20px;
-        }
+  #picInDialog {
+    height: auto;
+    border-radius: 3px;
+    display: inline-block;
+    @media (max-width: $large) {
+        width: 90vw !important;
+        border-radius: 5px;
     }
-    
-    #closebuttonInDialog {
-        font-family: "Roboto Condensed", sans-serif;
-        position: absolute;
+    overflow-x: hidden;
+  }
+  .verticalPic {
+    max-height: 71vh;
+    margin: 7vh;
+    @media (max-width: $large) {
+        margin: 5vw;
+        margin-top: 75px;
+        max-height: none;
+    }
+  }
+  .horizontalPic {
+    margin: 7vh;
+    width: 35vw;
+    @media (max-width: $large) {
+        margin: 5vw;
+        margin-top: 125px !important;
+    }
+  }
+  #textInDialog {
+    position: absolute;
+    width: 40%;
+    right: 14vh;
+    top: 7vh;
+    font-family: "Source Sans Pro", sans-serif;
+    @media (max-width: $large) {
+        position: relative;
+        width: 80%;
+        margin: auto;
+        right: 0;
+        top: 0;
+        font-size: 2.75vw;
+        margin-bottom: 50px;
+    }
+    @media (max-width: $small) {
+        font-size: 5vw;
+      }
+    #titleInDialog {
+      font-size: 2.5vw;
+      margin-bottom: 20px;
+      @media (max-width: $large) {
+        font-size: 7vw;
+      }
+      @media (max-width: $small) {
+        font-size: 10vw;
+      }
+    }
+  }
+
+  #closebuttonInDialog {
+    font-family: "Roboto Condensed", sans-serif;
+    position: absolute;
+    right: 50px;
+    top: 7vh;
+    cursor: pointer;
+    transition: opacity 0.1s;
+    &:hover {
+      opacity: 0.8;
+    }
+    @media (max-width: $large) {
+        font-size: 3vw;
+        top: 30px;
         right: 50px;
-        top: 7vh;
-        cursor: pointer;
-        transition: opacity .1s;
-        &:hover {
-            opacity: 0.8;
-        }
+      }
+    @media (max-width: $small) {
+        font-size: 8vw;
+        top: 20px;
+        right: 20px;
     }
+  }
 }
 
 .no-show {
-    display: none !important;
+  display: none !important;
 }
 
 .low-opacity {
-    opacity: 0.6 !important;
+  opacity: 0.6 !important;
 }

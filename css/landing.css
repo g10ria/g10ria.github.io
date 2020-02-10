@@ -14,6 +14,22 @@ body {
   background-color: #ebebeb;
 }
 
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
+}
+
 body {
   background-color: #ebebeb;
 }
@@ -52,11 +68,6 @@ body {
   .mobile {
     display: none !important;
   }
-}
-
-#copyright {
-  text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 .content {

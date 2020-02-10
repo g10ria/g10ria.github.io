@@ -74,3 +74,7 @@ burger.addEventListener("click", function() {
         nav.classList.add("appear")
     }
 })
+
+document.getElementById("copyright-link").addEventListener("click", function() {
+    openNewTabTo("https://github.com/g10ria/g10ria.github.io")
+})

@@ -1,8 +1,8 @@
-$small: 500px;
-$large: 1000px;
+$small: 600px;
+$large: 1200px;
 
 .content {
-   font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -10,6 +10,19 @@ html {
 }
 
 body {
-    user-select: none;
-    background-color: rgb(235, 235, 235);
+  user-select: none;
+  background-color: rgb(235, 235, 235);
+}
+
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  #copyright-link {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.65;
+    }
+  }
 }
