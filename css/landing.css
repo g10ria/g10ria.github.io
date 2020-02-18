@@ -1,5 +1,5 @@
 .content {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 html {
@@ -22,8 +22,8 @@ body {
 #copyright #copyright-link {
   text-decoration: underline;
   cursor: pointer;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 #copyright #copyright-link:hover {
@@ -58,13 +58,13 @@ body {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .notmobile {
     display: none !important;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .mobile {
     display: none !important;
   }
@@ -80,13 +80,13 @@ body {
           user-select: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content {
     margin-top: 4vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content {
     margin-top: 15vw;
     padding-bottom: 10vw;
@@ -99,13 +99,13 @@ body {
   display: inline-block;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .name {
     font-size: 12vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .name {
     font-size: 20vw;
     line-height: 22vw;
@@ -118,13 +118,13 @@ body {
   margin-left: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .description {
     font-size: 1.75vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .description {
     margin-top: 10px;
     font-size: 4.5vw;
@@ -136,7 +136,7 @@ body {
   margin: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .media-container {
     margin-left: 10px;
   }
@@ -195,7 +195,7 @@ body {
           box-shadow: 5px 5px 12px #ececec;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .card-container {
     padding: 30px;
     margin: auto;
@@ -210,7 +210,7 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .card-container .card-title {
     font-size: 6vw;
   }
@@ -248,7 +248,7 @@ body {
           box-shadow: 5px 5px 12px #dfdfdf;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .card-container .card-photo {
     margin-bottom: 0;
   }
@@ -259,7 +259,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .card-container .card-photo-horizontal {
     width: 100%;
   }
@@ -270,7 +270,7 @@ body {
   height: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .card-container .card-photo-vertical {
     margin: 10px;
     margin-top: 30px;
@@ -286,13 +286,13 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .photos-container {
     right: 75px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .photos-container {
     display: none;
   }
@@ -331,7 +331,7 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .content #hamburger {
     display: none !important;
   }
@@ -362,14 +362,14 @@ body {
   transition: right .2s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .nav-container {
     right: -500px;
     padding: 100px 0px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .nav-container {
     right: -300px;
     -webkit-box-shadow: 1px 0px 5px 5px #c2c2c2;
@@ -387,13 +387,13 @@ body {
   transition: background-color .5s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .nav-container .nav-option {
     font-size: 2.5vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .nav-container .nav-option {
     font-size: 6vw;
   }
@@ -424,13 +424,13 @@ body {
   font-size: 1.5vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .content .nav-container .nav-option-small {
     font-size: 2vw;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .content .nav-container .nav-option-small {
     font-size: 5vw;
   }
