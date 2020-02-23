@@ -60,3 +60,10 @@
     text-align: right;
   }
 }
+
+.linkable {
+    cursor: pointer;
+    &:hover {
+        opacity: 0.6;
+    }
+}

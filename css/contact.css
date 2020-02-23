@@ -142,4 +142,12 @@ body {
   float: left;
   line-height: 30px;
 }
+
+.linkable {
+  cursor: pointer;
+}
+
+.linkable:hover {
+  opacity: 0.6;
+}
 /*# sourceMappingURL=contact.css.map */
