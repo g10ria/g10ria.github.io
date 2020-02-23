@@ -1,0 +1,147 @@
+.content {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ebebeb !important;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ebebeb;
+}
+
+.condensed {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
+}
+
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
+.loaded {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.content {
+  width: 90vw;
+  margin: 4vw auto 4vw auto;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.content .tile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.content #backarrow {
+  font-size: 2vw;
+  line-height: 70%;
+  color: #202020;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.content #backarrow:hover {
+  color: #505050;
+}
+
+@media (max-width: 1100px) {
+  .content #backarrow {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content #backarrow {
+    font-size: 7vw;
+  }
+}
+
+.content .title {
+  margin: 10px;
+  font-size: 2vw;
+}
+
+@media (max-width: 1100px) {
+  .content .title {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .title {
+    font-size: 7vw;
+  }
+}
+
+.contacts-container {
+  margin: 50px auto;
+  background-color: #f6f6f6;
+  width: 35%;
+  padding: 20px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .contacts-container {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts-container {
+    width: 100%;
+  }
+}
+
+.contacts-container .contact {
+  line-height: 30px;
+  text-align: right;
+}
+
+.contacts-container .contact .contact-icon {
+  float: left;
+  line-height: 30px;
+}
+/*# sourceMappingURL=contact.css.map */

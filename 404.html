@@ -10,10 +10,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Condensed&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="./css/404.css">
+    <script src="./js/transition.js" defer></script>
+
     <title>GZ - 404</title>
 </head>
 
-<body>
+<body style="opacity: 0; overflow: hidden;">
     <div class="content">
         <div class="title">
             404
@@ -28,8 +30,9 @@
 
 </body>
 <script>
-    document.getElementsByClassName("button")[0].addEventListener("click", function() {
+    document.getElementsByClassName("button")[0].addEventListener("click", function () {
         window.location.href = "./index.html"
     })
 </script>
+
 </html>
