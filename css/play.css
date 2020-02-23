@@ -44,8 +44,6 @@ body {
 }
 
 .loaded {
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
   opacity: 1 !important;
   overflow: visible !important;
 }
@@ -84,7 +82,7 @@ body {
   color: #505050;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content #backarrow {
     font-size: 2.75vw;
   }
@@ -101,7 +99,7 @@ body {
   font-size: 2vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content .title {
     font-size: 2.75vw;
   }
@@ -150,7 +148,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content .tile .tile-title {
     font-size: 3vw;
   }
