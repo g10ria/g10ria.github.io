@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ebebeb !important;
 }
 
 body {
@@ -34,11 +35,40 @@ body {
   opacity: 0.65;
 }
 
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
+.loaded {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
 .content {
   width: 90vw;
   margin: 4vw auto 4vw auto;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.content .tile-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .content #backarrow {
@@ -54,9 +84,33 @@ body {
   color: #505050;
 }
 
+@media (max-width: 1200px) {
+  .content #backarrow {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content #backarrow {
+    font-size: 7vw;
+  }
+}
+
 .content .title {
   margin: 10px;
   font-size: 2vw;
+}
+
+@media (max-width: 1200px) {
+  .content .title {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .title {
+    font-size: 7vw;
+  }
 }
 
 .content .desc {
@@ -69,17 +123,22 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #f6f6f6;
-  -webkit-box-shadow: 1px 1px 5px 5px #e2e2e2;
-          box-shadow: 1px 1px 5px 5px #e2e2e2;
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
   font-family: "Source Sans Pro";
   width: 42vw;
   margin: 10px;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   display: inline-block;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+}
+
+@media (max-width: 600px) {
+  .content .tile {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .content .tile:hover {
@@ -91,11 +150,47 @@ body {
   margin-bottom: 10px;
 }
 
+@media (max-width: 1200px) {
+  .content .tile .tile-title {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .content .tile .tile-title {
+    font-size: 5vw;
+  }
+}
+
 .content .tile .tile-img {
   width: 50%;
   float: right;
   margin-left: 20px;
   border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .content .tile .tile-img {
+    float: none;
+    width: 90%;
+    margin-left: 0;
+  }
+}
+
+.content .tile-img {
+  width: 20vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 600px) {
+  .content .tile-img {
+    width: 40%;
+    margin-top: 20px;
+    height: auto;
+  }
 }
 
 a {

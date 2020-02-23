@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ebebeb !important;
 }
 
 body {
@@ -40,6 +41,10 @@ body {
 
 .low-opacity {
   opacity: 0.6 !important;
+}
+
+.loaded {
+  opacity: 1 !important;
 }
 
 .no-scroll {

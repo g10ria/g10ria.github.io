@@ -7,6 +7,7 @@ $large: 1200px;
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(235, 235, 235) !important;
 }
 
 body {
@@ -39,6 +40,12 @@ body {
 
 .low-opacity {
   opacity: 0.6 !important;
+}
+
+.loaded {
+    transition: opacity .3s;
+    opacity: 1 !important;
+    overflow: visible !important;
 }
 
 .no-scroll {

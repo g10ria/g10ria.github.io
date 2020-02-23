@@ -10,7 +10,10 @@ let everything = document.getElementsByClassName("content")[0]
 let body = document.body
 
 document.getElementById("backarrow").addEventListener("click", function() {
-    window.location.href = "../"
+    document.body.classList.remove("loaded")
+    setTimeout(function () {
+        window.location.href = "../"
+    }, 500)
 })
 
 for (let i = 0; i < pics.length;i++) {

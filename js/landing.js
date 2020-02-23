@@ -13,7 +13,10 @@ function openNewTabTo(link) {
 
 for(let i=0;i<navButtons.length;i++) {
     navButtons[i].addEventListener("click", function() {
-        window.location.href = `./pages/${navOptions[i]}.html`
+        document.body.classList.remove("loaded")
+        setTimeout(function() {
+            window.location.href = `./pages/${navOptions[i]}.html`
+        }, 500)
     })
     navButtons[i].addEventListener("mouseenter", function() {
         navButtons[i].children[0].classList.add("arrow-appear")

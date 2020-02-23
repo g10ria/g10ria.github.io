@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #ebebeb !important;
 }
 
 body {
@@ -40,6 +41,13 @@ body {
 
 .low-opacity {
   opacity: 0.6 !important;
+}
+
+.loaded {
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+  opacity: 1 !important;
+  overflow: visible !important;
 }
 
 .no-scroll {

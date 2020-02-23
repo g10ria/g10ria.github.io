@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="../js/play.js" defer></script>
+    <script src="../js/transition.js" defer></script>
+
     <link rel="stylesheet" type="text/css" href="../css/play.css">
     <title>Gloria Zhu - Playground</title>
 
@@ -15,7 +17,7 @@
     <link rel="icon" type="image/png" href="../pix/favicons/favicon-01.png">
 </head>
 
-<body>
+<body style="opacity: 0; overflow: hidden;">
     <div class="content">
         <span id="backarrow">&#11104;</span>
         <span class="title">
@@ -26,25 +28,35 @@
             small projects, sketches, ideas
         </div>
 
-        <a class="tile" href="https://gloriazh.com/Paint" target="_blank">
-            <div class="tile-title">
-                Pixl
-                <img src="../pix/playground/pixl.JPG" class="tile-img">
-                
-            </div>
-            <div class="tile-desc">
-                Make pixel art in your browser!
-            </div>
-        </a>
-        <a class="tile" href="https://gloriazh.com/Scoresheet" target="_blank">
-            <div class="tile-title">
-                Scoresheet
-                <img src="../pix/playground/scoresheet.JPG" class="tile-img">
-            </div>
-            <div class="tile-desc">
-                Record points and take player statistics during a volleyball game.
-            </div>
-        </a>
+        <div class="tile-container">
+            <a class="tile" href="https://gloriazh.com/Paint" target="_blank">
+                <div class="tile-title">
+                    Pixl
+                    <img src="../pix/playground/pixl.JPG" class="tile-img">
+            
+                </div>
+                <div class="tile-desc">
+                    Make pixel art in your browser!
+                </div>
+            </a>
+            <a class="tile" href="https://gloriazh.com/Scoresheet" target="_blank">
+                <div class="tile-title">
+                    Scoresheet
+                    <img src="../pix/playground/scoresheet.JPG" class="tile-img">
+                </div>
+                <div class="tile-desc">
+                    Record points and take player statistics during a volleyball game.
+                </div>
+            </a>
+                <img src="../pix/art/pay_attention_in_class.JPG" class="tile-img">
+                <img src="../pix/art/peak.JPG" class="tile-img">
+                <img src="../pix/art/rigid.JPG" class="tile-img">
+                <img src="../pix/art/threecolors.JPG" class="tile-img">
+        </div>
+
+        
+        
+
     </div>
 
     <div id="copyright">©️ 2020 Gloria Zhu &centerdot; <span id="copyright-link">Website Src</span></div>

@@ -5,6 +5,10 @@
   margin: 4vw auto 4vw auto;
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
+  .tile-container {
+      display: flex;
+    flex-flow: row wrap;
+  }
   #backarrow {
     font-size: 2vw;
     line-height: 70%;
@@ -14,11 +18,25 @@
     &:hover {
       color: rgb(80, 80, 80);
     }
+    @media (max-width: $large) {
+      font-size: 2.75vw;
+    }
+    @media (max-width: $small) {
+      font-size: 7vw;
+    }
   }
+
   .title {
     margin: 10px;
     font-size: 2vw;
+    @media (max-width: $large) {
+      font-size: 2.75vw;
+    }
+    @media (max-width: $small) {
+      font-size: 7vw;
+    }
   }
+
   .desc {
     margin-top: 10px;
     margin-bottom: 40px;
@@ -27,7 +45,6 @@
     padding: 30px;
     box-sizing: border-box;
     background-color: rgb(246, 246, 246);
-    box-shadow: 1px 1px 5px 5px #e2e2e2;
     border-radius: 5px;
     overflow: hidden;
     text-align: left;
@@ -35,28 +52,55 @@
     width: 42vw;
     margin: 10px;
 
-    display: inline-block;
-
-    transition: opacity .2s;
-
-    &:hover {
-        opacity: 0.7;
+    @media (max-width: $small) {
+        width: 100%;
+        text-align: center;
     }
 
+    transition: opacity 0.2s;
+
+    display: inline-block;
+
+    &:hover {
+      opacity: 0.7;
+    }
     .tile-title {
       font-size: 2vw;
       margin-bottom: 10px;
+      @media (max-width: $large) {
+          font-size: 3vw;
+      }
+      @media(max-width: $small) {
+          font-size: 5vw;
+      }
     }
     .tile-img {
       width: 50%;
       float: right;
       margin-left: 20px;
       border-radius: 3px;
+      @media(max-width: $small) {
+          float: none;
+          width: 90%;
+          margin-left: 0;
+      }
     }
   }
+  .tile-img {
+      width: 20vw;
+      justify-self: center;
+      margin: auto;
+      background-color: rgb(246, 246, 246);
+
+      @media (max-width: $small) {
+        width: 40%;
+        margin-top: 20px;
+        height: auto;
+        }
+    }
 }
 
 a {
-    text-decoration: none !important;
-    color: black !important;
+  text-decoration: none !important;
+  color: black !important;
 }
