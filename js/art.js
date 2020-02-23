@@ -7,6 +7,7 @@ let descInDialog = document.getElementById("descriptionInDialog")
 let closebuttonInDialog = document.getElementById("closebuttonInDialog")
 
 let everything = document.getElementsByClassName("content")[0]
+let body = document.body
 
 document.getElementById("backarrow").addEventListener("click", function() {
     window.location.href = "../"
@@ -20,6 +21,7 @@ for (let i = 0; i < pics.length;i++) {
     let pieceAwards = pics[i].dataset.awards.split(";")
    
     pics[i].addEventListener("click", function() {
+        body.classList.add("no-scroll")
         picInDialog.src = `../pix/art/${picName}.jpg`
         if (isVertical) {
             picDialog.classList.add("tallDialog")
@@ -57,6 +59,8 @@ closebuttonInDialog.addEventListener("click", function() {
 
     titleInDialog.innerHTML = ""
     descInDialog.innerHTML = ""
+
+    body.classList.remove("no-scroll")
 })
 
 function openNewTabTo(link) {

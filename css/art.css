@@ -14,6 +14,10 @@ body {
   background-color: #ebebeb;
 }
 
+.condensed, #picDialog #textInDialog #titleInDialog {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
 #copyright {
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
@@ -28,6 +32,10 @@ body {
 
 #copyright #copyright-link:hover {
   opacity: 0.65;
+}
+
+.no-scroll {
+  overflow: hidden !important;
 }
 
 .content {
@@ -127,51 +135,37 @@ body {
   opacity: 0.8;
 }
 
-.wideDialog {
-  width: 86vw;
-  left: 7vw;
-  top: 14vh;
-}
-
-@media (max-width: 1200px) {
-  .wideDialog {
-    width: 94vw;
-    left: 3vw;
-  }
-}
-
-.tallDialog {
-  width: 70vw;
-  left: 15vw;
-  top: 7vh;
-}
-
-@media (max-width: 1200px) {
-  .tallDialog {
-    width: 80vw;
-    left: 10vw;
-  }
-}
-
 #picDialog {
+  width: 60vw;
+  height: 100vh;
+  left: 20vw;
+  top: 0;
+  padding: 15px 60px 50px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 1;
   background-color: white;
   position: fixed;
-  border-radius: 5px;
+  text-align: center;
+  overflow-y: scroll;
 }
 
 @media (max-width: 1200px) {
   #picDialog {
     width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #picDialog {
+    width: 100vw;
     left: 0;
-    overflow-y: scroll;
   }
 }
 
 #picDialog #picInDialog {
+  margin-top: 30px;
   height: auto;
   border-radius: 3px;
   display: inline-block;
@@ -180,53 +174,30 @@ body {
 
 @media (max-width: 1200px) {
   #picDialog #picInDialog {
-    width: 90vw !important;
     border-radius: 5px;
   }
 }
 
 #picDialog .verticalPic {
-  max-height: 71vh;
-  margin: 7vh;
-}
-
-@media (max-width: 1200px) {
-  #picDialog .verticalPic {
-    margin: 5vw;
-    margin-top: 75px;
-    max-height: none;
-  }
+  max-height: 60vh;
 }
 
 #picDialog .horizontalPic {
-  margin: 7vh;
-  width: 35vw;
-}
-
-@media (max-width: 1200px) {
-  #picDialog .horizontalPic {
-    margin: 5vw;
-    margin-top: 125px !important;
-  }
+  width: 90%;
 }
 
 #picDialog #textInDialog {
-  position: absolute;
-  width: 40%;
-  right: 14vh;
-  top: 7vh;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 @media (max-width: 1200px) {
   #picDialog #textInDialog {
-    position: relative;
-    width: 80%;
-    margin: auto;
-    right: 0;
-    top: 0;
-    font-size: 2.75vw;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 2.5vw;
   }
 }
 
@@ -238,7 +209,7 @@ body {
 
 #picDialog #textInDialog #titleInDialog {
   font-size: 2.5vw;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1200px) {
@@ -255,12 +226,11 @@ body {
 
 #picDialog #closebuttonInDialog {
   font-family: "Roboto Condensed", sans-serif;
-  position: absolute;
-  right: 50px;
-  top: 7vh;
   cursor: pointer;
+  font-weight: 900;
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
+  text-align: right;
 }
 
 #picDialog #closebuttonInDialog:hover {
@@ -270,16 +240,12 @@ body {
 @media (max-width: 1200px) {
   #picDialog #closebuttonInDialog {
     font-size: 3vw;
-    top: 30px;
-    right: 50px;
   }
 }
 
 @media (max-width: 600px) {
   #picDialog #closebuttonInDialog {
     font-size: 8vw;
-    top: 20px;
-    right: 20px;
   }
 }
 
