@@ -22,7 +22,7 @@ for (let i = 0; i < pics.length;i++) {
    
     pics[i].addEventListener("click", function() {
         body.classList.add("no-scroll")
-        picInDialog.src = `../pix/art/${picName}.jpg`
+        picInDialog.src = `../pix/${picName}.JPG`
         if (isVertical) {
             picDialog.classList.add("tallDialog")
             picInDialog.classList.add("verticalPic")

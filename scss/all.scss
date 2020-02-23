@@ -30,3 +30,17 @@ body {
     }
   }
 }
+
+// utility classes
+
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}

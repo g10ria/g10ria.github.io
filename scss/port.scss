@@ -1,9 +1,5 @@
 @import "all";
 
-.no-scroll {
-    overflow: hidden !important;
-}
-
 .content {
   width: 60vw;
   margin: 4vw auto 4vw auto;
@@ -81,11 +77,15 @@
   left: 20vw;
   top: 0;
   padding: 15px 60px 50px 60px;
-box-sizing:border-box;
+  box-sizing: border-box;
 
   @media (max-width: $large) {
-      width: 100vw;
-    padding: 15px;
+      width: 80vw;
+      left: 10vw;
+  }
+  @media (max-width: $small) {
+    width: 100vw;
+    left: 0;
   }
 
   z-index: 1;
@@ -96,13 +96,8 @@ box-sizing:border-box;
 
   overflow-y: scroll;
 
-  @media (max-width: $large) {
-    width: 100vw;
-    left: 0;
-  }
-
   #picInDialog {
-      margin-top: 30px;
+    margin-top: 30px;
     height: auto;
     border-radius: 3px;
     display: inline-block;
@@ -112,7 +107,7 @@ box-sizing:border-box;
     overflow-x: hidden;
   }
   .verticalPic {
-      max-height: 60vh;
+    max-height: 60vh;
   }
   .horizontalPic {
     width: 90%;
@@ -120,15 +115,15 @@ box-sizing:border-box;
   #textInDialog {
     width: 90%;
     margin-left: 5%;
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: "Source Sans Pro", sans-serif;
 
     @media (max-width: $large) {
-        margin-top: 30px;
-        text-align:left;
-      font-size: 2.5vw;
+      margin-top: 30px;
+      font-size: 1.75vw;
     }
     @media (max-width: $small) {
+        text-align: left;
       font-size: 5vw;
     }
 
@@ -137,7 +132,7 @@ box-sizing:border-box;
       margin-bottom: 5px;
       @extend .condensed;
       @media (max-width: $large) {
-        font-size: 7vw;
+        font-size: 4vw;
       }
       @media (max-width: $small) {
         font-size: 10vw;
@@ -153,7 +148,7 @@ box-sizing:border-box;
     &:hover {
       opacity: 0.8;
     }
-    text-align:right;
+    text-align: right;
     @media (max-width: $large) {
       font-size: 3vw;
     }
@@ -163,10 +158,3 @@ box-sizing:border-box;
   }
 }
 
-.no-show {
-  display: none !important;
-}
-
-.low-opacity {
-  opacity: 0.6 !important;
-}

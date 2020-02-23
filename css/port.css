@@ -34,6 +34,14 @@ body {
   opacity: 0.65;
 }
 
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
 .no-scroll {
   overflow: hidden !important;
 }
@@ -152,12 +160,12 @@ body {
 
 @media (max-width: 1200px) {
   #picDialog {
-    width: 100vw;
-    padding: 15px;
+    width: 80vw;
+    left: 10vw;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   #picDialog {
     width: 100vw;
     left: 0;
@@ -189,20 +197,20 @@ body {
 #picDialog #textInDialog {
   width: 90%;
   margin-left: 5%;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 @media (max-width: 1200px) {
   #picDialog #textInDialog {
     margin-top: 30px;
-    text-align: left;
-    font-size: 2.5vw;
+    font-size: 1.75vw;
   }
 }
 
 @media (max-width: 600px) {
   #picDialog #textInDialog {
+    text-align: left;
     font-size: 5vw;
   }
 }
@@ -214,7 +222,7 @@ body {
 
 @media (max-width: 1200px) {
   #picDialog #textInDialog #titleInDialog {
-    font-size: 7vw;
+    font-size: 4vw;
   }
 }
 
@@ -248,12 +256,4 @@ body {
     font-size: 8vw;
   }
 }
-
-.no-show {
-  display: none !important;
-}
-
-.low-opacity {
-  opacity: 0.6 !important;
-}
-/*# sourceMappingURL=art.css.map */
+/*# sourceMappingURL=port.css.map */
