@@ -45,6 +45,7 @@ body {
 
 .loaded {
   opacity: 1 !important;
+  overflow: visible !important;
 }
 
 .no-scroll {
@@ -58,7 +59,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content {
     margin-top: 5vw;
     width: 80vw;
@@ -85,7 +86,7 @@ body {
   color: #505050;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content #backarrow {
     font-size: 2.75vw;
   }
@@ -102,7 +103,7 @@ body {
   font-size: 2vw;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   .content .title {
     font-size: 2.75vw;
   }
@@ -163,7 +164,7 @@ body {
   overflow-y: scroll;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #picDialog {
     width: 80vw;
     left: 10vw;
@@ -185,7 +186,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #picDialog #picInDialog {
     border-radius: 5px;
   }
@@ -206,7 +207,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #picDialog #textInDialog {
     margin-top: 30px;
     font-size: 1.75vw;
@@ -225,7 +226,7 @@ body {
   margin-bottom: 5px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #picDialog #textInDialog #titleInDialog {
     font-size: 4vw;
   }
@@ -250,7 +251,7 @@ body {
   opacity: 0.8;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
   #picDialog #closebuttonInDialog {
     font-size: 3vw;
   }
