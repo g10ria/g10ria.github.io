@@ -44,8 +44,6 @@ body {
 }
 
 .loaded {
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
   opacity: 1 !important;
   overflow: visible !important;
 }
