@@ -19,6 +19,16 @@
     border-radius: 3px;
     text-align: left;
 
+    .techs {
+        .tech {
+            background-color: gray;
+            color: white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        margin-bottom: 5px;
+    }
+
     .card-title {
       @extend .condensed;
       font-size: 2vw;
