@@ -40,6 +40,7 @@
   .desc {
     margin-top: 10px;
     margin-bottom: 40px;
+    font-family: "Source Sans Pro", sans-serif;
   }
   .tile {
     padding: 30px;
@@ -50,7 +51,7 @@
     text-align: left;
     font-family: "Source Sans Pro";
     width: 42vw;
-    margin: 10px;
+    margin: 30px 10px;
 
     @media (max-width: $small) {
         width: 100%;

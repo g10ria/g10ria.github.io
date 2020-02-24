@@ -114,6 +114,7 @@ body {
 .content .desc {
   margin-top: 10px;
   margin-bottom: 40px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .content .tile {
@@ -126,7 +127,7 @@ body {
   text-align: left;
   font-family: "Source Sans Pro";
   width: 42vw;
-  margin: 10px;
+  margin: 30px 10px;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
   display: inline-block;

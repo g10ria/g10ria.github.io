@@ -53,6 +53,102 @@ body {
 }
 
 .content {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ebebeb !important;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ebebeb;
+}
+
+.condensed, #picDialog #textInDialog #titleInDialog {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
+}
+
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
+.loaded {
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+#backarrow {
+  font-size: 2vw;
+  line-height: 70%;
+  color: #202020;
+  cursor: pointer;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+#backarrow:hover {
+  color: #505050;
+}
+
+@media (max-width: 1100px) {
+  #backarrow {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #backarrow {
+    font-size: 7vw;
+  }
+}
+
+.title {
+  margin: 10px;
+  font-size: 2vw;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 2.75vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 7vw;
+  }
+}
+
+.content {
   width: 60vw;
   margin: 4vw auto 4vw auto;
   text-align: center;
@@ -70,48 +166,6 @@ body {
   .content {
     margin-top: 10vw;
     width: 90vw;
-  }
-}
-
-.content #backarrow {
-  font-size: 2vw;
-  line-height: 70%;
-  color: #202020;
-  cursor: pointer;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-
-.content #backarrow:hover {
-  color: #505050;
-}
-
-@media (max-width: 1100px) {
-  .content #backarrow {
-    font-size: 2.75vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .content #backarrow {
-    font-size: 7vw;
-  }
-}
-
-.content .title {
-  margin: 10px;
-  font-size: 2vw;
-}
-
-@media (max-width: 1100px) {
-  .content .title {
-    font-size: 2.75vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .content .title {
-    font-size: 7vw;
   }
 }
 

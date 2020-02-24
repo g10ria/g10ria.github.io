@@ -15,7 +15,7 @@ body {
   background-color: #ebebeb;
 }
 
-.condensed {
+.condensed, .content .card .card-title, .content .card .card-button {
   font-family: "Roboto Condensed", sans-serif !important;
 }
 
@@ -69,7 +69,7 @@ body {
   background-color: #ebebeb;
 }
 
-.condensed {
+.condensed, .content .card .card-title, .content .card .card-button {
   font-family: "Roboto Condensed", sans-serif !important;
 }
 
@@ -149,59 +149,79 @@ body {
 }
 
 .content {
-  width: 90vw;
-  margin: 4vw auto 4vw auto;
   text-align: center;
+  margin: 4vw auto 4vw auto;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.content .tile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+.content .desc {
+  margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.contacts-container {
-  margin: 50px auto;
-  background-color: #f6f6f6;
-  width: 35%;
-  padding: 20px 40px;
+.content .card {
+  width: 80%;
+  padding: 30px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 30px auto;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 3px;
+  text-align: left;
 }
 
-@media (max-width: 1100px) {
-  .contacts-container {
-    width: 60%;
-    text-align: center;
-  }
+.content .card .card-title {
+  font-size: 2vw;
+  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-  .contacts-container {
-    width: 100%;
-  }
+.content .card .card-img {
+  float: right;
+  margin-left: 50px;
+  width: 50%;
+  border-radius: 3px;
 }
 
-.contacts-container .contact {
-  line-height: 30px;
-  text-align: right;
+.content .card .card-description {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 150%;
+  margin-bottom: 15px;
 }
 
-.contacts-container .contact .contact-icon {
-  float: left;
-  line-height: 30px;
+.content .card .card-button {
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 10px 10px auto 0;
+  border-width: 1px;
+  border-color: #eaeaea;
+  border-radius: 5px;
+  border-style: solid;
+  color: #2b2b2b;
+  -webkit-transition: background-color 0.1s, border-color 0.1s, color 0.1s;
+  transition: background-color 0.1s, border-color 0.1s, color 0.1s;
 }
 
-.linkable {
+.content .card .card-button:not(.disabled):hover {
   cursor: pointer;
+  background-color: gray;
+  border-color: gray;
+  color: white;
 }
 
-.linkable:hover {
-  opacity: 0.6;
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
 }
-/*# sourceMappingURL=contact.css.map */
+
+a {
+  color: black !important;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+a:hover {
+  color: #585858 !important;
+}
+/*# sourceMappingURL=code.css.map */
