@@ -1,0 +1,66 @@
+$small: 600px;
+$large: 1100px;
+
+$h1-color: #26547c;
+$h2-color: #808a9f;
+
+.content {
+  font-family: "Baloo Chettan 2", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: rgb(235, 235, 235) !important;
+}
+
+body {
+  user-select: none;
+  background-color: rgb(235, 235, 235);
+}
+
+.condensed {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.source {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.lexend {
+  font-family: "Lexend Deca", sans-serif !important;
+}
+
+#copyright-link {
+  text-align: center;
+  @extend .condensed;
+  color: $h1-color;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+// utility classes
+
+.loaded {
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+img,
+button {
+  user-select: none;
+}
+
+*::selection {
+  //   background-color: $superlight-gray;
+}
+
+a {
+  color: rgb(82, 161, 167);
+  text-decoration: none;
+  &:hover {
+      text-decoration: underline;
+  }
+}

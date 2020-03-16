@@ -19,11 +19,11 @@ body {
   font-family: "Roboto Condensed", sans-serif !important;
 }
 
-.source, .content #desc, .content .card .card-description {
+.source {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
-.lexend, .content .card .card-title {
+.lexend {
   font-family: "Lexend Deca", sans-serif !important;
 }
 
@@ -60,32 +60,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-.content {
-  width: 50vw;
-  margin: 50px auto;
-}
-
-.content #name {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #26547c;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.content .card {
-  margin: 20px 0;
-  background-color: whitesmoke;
-  padding: 20px;
-}
-
-.content .card .card-title {
-  color: #808a9f;
-  margin-bottom: 10px;
-}
-
-.content .card .card-description {
-  font-weight: 100;
-}
-/*# sourceMappingURL=landing.css.map */
+/*# sourceMappingURL=general.css.map */

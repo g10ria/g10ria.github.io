@@ -1,0 +1,89 @@
+@import "general";
+
+.content {
+  width: 90vw;
+  margin: 50px auto;
+  text-align: center;
+  @extend .lexend;
+
+  .header {
+      margin-bottom: 5px;
+  }
+  #back {
+    color: rgb(82, 161, 167);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+  .tile-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .tile {
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    @extend .source;
+    width: 42vw;
+    margin: 15px 10px;
+
+    @media (max-width: $small) {
+      width: 100%;
+      text-align: center;
+    }
+
+    transition: opacity 0.2s;
+    display: inline-block;
+
+    &:hover {
+      opacity: 0.7;
+    }
+    .tile-title {
+      font-size: 2vw;
+      margin-bottom: 10px;
+      @extend .lexend;
+      @media (max-width: $large) {
+        font-size: 3vw;
+      }
+      @media (max-width: $small) {
+        font-size: 5vw;
+      }
+    }
+    .tile-img {
+      width: 50%;
+      float: right;
+      margin-left: 20px;
+      border-radius: 3px;
+      @media (max-width: $small) {
+        float: none;
+        width: 90%;
+        margin-left: 0;
+      }
+    }
+  }
+  .tile-img {
+    width: 18vw;
+    justify-self: center;
+    margin: 15px 10px;
+    border-radius: 3px;
+
+    @media (max-width: $small) {
+      width: 40%;
+      margin-top: 20px;
+      height: auto;
+    }
+  }
+}
+
+a {
+  color: rgb(26, 26, 26);
+  text-decoration: none !important;
+}
