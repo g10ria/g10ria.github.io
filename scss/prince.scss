@@ -1,0 +1,17 @@
+@import "all";
+
+.content {
+    width: 40vw;
+    margin: 40px auto;
+
+    @media (max-width: $small) {
+        width: 75vw;
+    }
+
+    .page {
+        width: 60vw;
+        max-width: 100%;
+        margin: 20px auto;
+        border-radius: 5px;
+    }
+}

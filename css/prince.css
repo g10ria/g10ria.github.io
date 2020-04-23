@@ -1,0 +1,72 @@
+.content {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ebebeb !important;
+}
+
+body {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #ebebeb;
+}
+
+.condensed {
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+#copyright {
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#copyright #copyright-link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+#copyright #copyright-link:hover {
+  opacity: 0.65;
+}
+
+.no-show {
+  display: none !important;
+}
+
+.low-opacity {
+  opacity: 0.6 !important;
+}
+
+.loaded {
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.content {
+  width: 40vw;
+  margin: 40px auto;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 75vw;
+  }
+}
+
+.content .page {
+  width: 60vw;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=prince.css.map */
