@@ -10,5 +10,5 @@ function openNewTabTo(link) {
 }
 
 document.getElementById("copyright-link").addEventListener("click", function () {
-    openNewTabTo("https://github.com/g10ria/g10ria.github.io")
+    openNewTabTo("https://github.com/g10ria/portfolio")
 })
