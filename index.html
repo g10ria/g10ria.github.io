@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <script src="./js/landing.js" defer></script>
-   <link rel="stylesheet" type="text/css" href="./css/landing.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-   <script src="./js/transition.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./css/landing.css">
+    <script src="./js/transition.js" defer></script>
 
-   <title>Gloria Zhu</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Roboto+Condensed|Roboto&display=swap" rel="stylesheet">
+    <title>Gloria Zhu</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Lexend+Deca|Baloo+Chettan+2|Roboto+Condensed|Source+Sans+Pro|&display=swap"
+        rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="./pix/favicons/favicon-01.png">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-01.png">
 
     <meta property="og:title" content="Gloria Zhu" />
     <meta property="og:type" content="website" />
@@ -23,192 +25,93 @@
     <meta property="og:description" content="Sophomore @ The Harker School in San Jose, California 👋" />
 
 </head>
+
 <body style="opacity: 0; overflow: hidden; transition: opacity .3s;">
-   <div class="content">
-    <div class="name firstname">GLORIA&nbsp;</div>
-    <div class="name lastname">ZHU</div>
-    
-    <div class="description notmobile">Sophomore @ The Harker School in San Jose, California.
-    <br>
-    I love art and computers and everything in between 👋
-    <br><br>
-    See my work on the right or scroll to read more about me &#128522;
-    </div>
+    <div class="content">
 
-    <div class="description mobile">
-        Sophomore @ The Harker School in San Jose, California.
-        <br><br>
-        I love art and computers and everything in between 👋
-        <br><br>
-        See my work from the menu or scroll down to read more about me &#128522;
-        <br>&nbsp;
-    </div>
+        <div id="name">Gloria Zhu</div>
+        <div id="desc">15 y.o. aspiring designer and developer.</div>
+        Let's connect: &nbsp;<a href="https://www.linkedin.com/in/gloria-zhu-78a079155/" target="_blank">LinkedIn</a>&nbsp;&nbsp;<a href="https://github.com/g10ria" target="_blank">Github</a>&nbsp;&nbsp;<a href="https://www.instagram.com/_gloriazhu/" target="_blank">Instagram</a>
+        <div style="font-style: italic">Website in progress.</div>
 
-    <div class="media-container">
-        <div class="media-icon media-icon-github"></div>
-        <div class="media-icon media-icon-linkedin"></div>
-        <div class="media-icon media-icon-instagram"></div>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div id="whoami" class="card-container-anchor"></div>
-    <div class="card-container who-am-i-card">
-        <div class="card-title">
-            <a href="#whoami">Who am I?</a>
-        </div>
-        <div class="card-description">
-            I'm a high schooler born and raised in sunny Santa Clara, California. Currently, I attend The Harker School in San Jose as a sophomore 👩
-        </div>
-        <img src="./pix/landing/cards/harker.jpg" class="card-photo card-photo-horizontal" id="link-harker">
-        <div id="dev" class="card-container-anchor"></div>
-    </div>
-
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#dev">HarkerDev</a>
-        </div>
-        <div class="card-description">
-            On our school's software development organization, HarkerDev, we build official apps for the school 💻 
-            <br>It's a great environment to practice real-world SWE skills, such as working with a team, maintaining clean code, and interfacing with higher-ups. 
-        </div>
-        <img src="./pix/landing/cards/harkerdevlogo.jpg" class="card-photo card-photo-horizontal" id="link-harkerdev">
-        <div id="robotics" class="card-container-anchor"></div>
-    </div>
-
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#robotics">Robotics</a>
-        </div>
-        <div class="card-description">
-            On our school's FRC team, Harker Robotics, I contribute towards our imagery/ branding and our CAD team 🤖
-        </div>
-        <img src="./pix/landing/cards/styleguide.JPG" class="card-photo card-photo-vertical" id="link-roboticsstyleguide">
-        <img src="./pix/landing/robot.JPG" class="card-photo card-photo-vertical" id="link-robotics">
-        <div id="art" class="card-container-anchor"></div>
-    </div>
-
-    
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#art">Art & Design</a>
-        </div>
-        <div class="card-description">
-            I've been working with traditional mediums for a long time, and in the past year or so I've started experimenting more with graphic design and illustration, particularly in relation to the web 🎨
-            <br>I've done several pieces for various organizations both in and out of Harker, and you can click the Design tab on the right to see my portfolio.
-            <br><br>(Or, click Contact to get in touch and commission some work! 😃)
-        </div>
-        <div id="code" class="card-container-anchor"></div>
-    </div>
-    
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#code">Code</a>
-        </div>
-        <div class="card-description">
-            I like to code :).
-        </div>
-        <img src="./pix/landing/cards/githubprofile.JPG" class="card-photo card-photo-vertical" id="link-github">
-        <div id="games" class="card-container-anchor"></div>
-    </div>
-    
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#games">Games</a>
-        </div>
-        <div class="card-description">
-            I'm interested in the realm of game development, since it's sort of this intersection of so many different fields, including code, art, music, etc. 🎮
-            <br>I have some experience with Unity/ scripting in C#, but I'm looking to improve and build more games.
-        </div>
-        <img src="./pix/landing/cards/limeade.JPG" class="card-photo card-photo-horizontal" id="link-limeade">
-        <div id="books" class="card-container-anchor"></div>
-    </div>
-
-    <div class="card-container">
-        <div class="card-title">
-            <a href="#books">2020 Book Club!</a>
-        </div>
-        <div class="card-description">
-            My favorite books I've read so far, grouped by month 📖
-            <br>
-            <br>
-            1️⃣ The October Country by Ray Bradbury (JAN)<br>
-            1️⃣ 1984 by George Orwell (JAN)<br>
-            1️⃣ The Godfather by Mario Puzo (JAN)<br>
-            2️⃣ Road Through the Wall by Shirley Jackson (FEB)<br>
-            2️⃣ The Book Thief by Markus Zusak (FEB)<br>
-            2️⃣ Silence of the Lambs by Thomas Harris (FEB)
-        </div>
-    </div>
-
-    <div class="photos-container">
-        <div class="slideshow-container">
-            <div>
-                <img src="./pix/landing/autumn.JPG" class="photo">
-                <img src="./pix/landing/canyon.JPG" class="photo">
-                <img src="./pix/landing/cheesecake.JPG" class="photo">
-                <!-- <img src="./pix/landing/field.JPG" class="photo"> -->
-                <img src="./pix/landing/frc.JPG" class="photo">
-                <img src="./pix/landing/gouache.JPG" class="photo">
-                <img src="./pix/landing/mochi.JPG" class="photo">
-                <img src="./pix/landing/mountain.JPG" class="photo">
-                <!-- <img src="./pix/landing/pagoda.JPG" class="photo"> -->
-                <img src="./pix/landing/peppers.JPG" class="photo">
-                <img src="./pix/landing/railroad.JPG" class="photo">
-                <img src="./pix/landing/robot.JPG" class="photo">
-                <img src="./pix/landing/ruins.JPG" class="photo">
-                <img src="./pix/landing/sausage.JPG" class="photo">
-                <img src="./pix/landing/store.JPG" class="photo">
-                <img src="./pix/landing/teapot.JPG" class="photo">
-                <img src="./pix/landing/trainstation.JPG" class="photo">
-                <img src="./pix/landing/village.JPG" class="photo">
-                <img src="./pix/landing/water.JPG" class="photo">
+        <div class="card">
+            <div class="card-title">
+                1 - About me
+            </div>
+            <div class="card-description">
+                I'm a sophomore at The Harker School in San Jose, California. 👩
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-title">
+                2 - Art & Design
+            </div>
+            <div class="card-description">
+                - Over 10 years experience with traditional mediums<br>
+                - 2 years experience with Adobe Creative Suite<br>
+                - Interested in graphic and UI design<br><br>
+
+                Scholastic Art and Writing Awards:
+                <div class="card-subdescription">
+                2019 - 1 Silver Key in Drawing and Illustration
+                <br>
+                2020 - 2 National Silver Medals and 3 Gold Keys in Design; 7 Silver Keys and 4 Honorable Mentions in Design/Digital
+                Art/Drawing and Illustration
+                </div>
+                <br>
+
+                See my <a href="./traditional">traditional pieces</a> or my <a href="./design">design work</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                3 - Code
+            </div>
+            <div class="card-description">
+                - Member of <a href="https://dev.harker.org" target="_blank">HarkerDev</a><br>
+                - Interested in web development, game development, and computer graphics<br><br>
+
+                See my <a>projects </a> or check out my <a href="https://github.com/g10ria" target="_blank">Github</a>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">
+                4 - Sandbox
+            </div>
+            <div class="card-description">
+                <a>photos, videos, small/unfinished projects</a>
+            </div>
+        </div>
+
+        <!-- <div class="card">
+        <div class="card-title">
+            Robotics
+        </div>
+        <div class="card-description">
+            - Apart of <a>Harker Robotics</a> (FRC 1072)<br>
+            - Head of team imagery (brand identity, illustration)<br>
+            - A lead in CAD/ 3D design team<br><br>
+        </div>
+    </div> -->
+        <!-- <div class="card">
+        <div class="card-title">
+            My favorite books
+        </div>
+        <div class="card-description">
+            The October Country by Ray Bradbury<br>
+            The Godfather by Mario Puzo<br>
+        </div>
+    </div> -->
+
     </div>
 
-    <div id="hamburger"></div>
+    <div id="copyright-link">©️ 2020 g10ria</div>
 
-    <div class="nav-container">
-        <div class="nav-option" data-optionName="code">
-            CODE
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-        <div class="nav-option" data-optionName="design">
-            DESIGN
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-        <div class="nav-option" data-optionName="art">
-            ART
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-        <div class="nav-option" data-optionName="media">
-            PICS/VIDS
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-        <div class="nav-option" data-optionName="play">
-            PLAY
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-        <div class="spacer"></div>
-        <div class="nav-option nav-option-small" data-optionName="contact">CONTACT
-            <span class="nav-arrow">
-                &nbsp;&#8594;
-            </span>
-        </div>
-    </div>
-   </div>
-<div id="copyright">©️ 2020 Gloria Zhu &centerdot; <span id="copyright-link">Website Src</span></div>
-   
 </body>
+
 </html>
