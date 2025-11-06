@@ -1,0 +1,53 @@
+.description-box {
+    margin-bottom: 50px;
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.work-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-title {
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+.work-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.work-details {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dotted blue;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-grow: 1;
+}
+
+/* big item box  */
+.work-item {
+    flex-basis: calc(100% / 2 - 30px);
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px dashed rgb(202, 202, 202);
+    padding: 15px;
+    /* transition: box-shadow 0.2s ease-in-out; */
+}
+
+.work-item:hover {
+    border: 1px solid blue;
+}
+
+.work-item:active {
+    box-shadow: inset 0 0 0 2px blue;
+}

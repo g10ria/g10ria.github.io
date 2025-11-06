@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Zhu</title>
+
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/work.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+</head>
+<body>
+    <div class="content">
+        <div class="navbox">
+            <span class="navoption"><a href="/index.html">ABOUT ME</a> </span>
+            <span class="navoption">
+                <a href="/work.html">MY WORK</a> <span class="yarndings blue navlabel">'</span>
+            </span>
+            <span class="navoption">
+                <a href="/archive.html">ARCHIVE</a>
+            </span>
+            <span class="navoption">
+                <a href="https://google.com" target="_blank">CV</a>
+            </span>
+        </div>
+
+        <span class="caption italic blue back"><a href="/work.html"><-- back</a></span>
+        <br>
+        <br>
+
+        <h1>Motor Moves</h1>
+        <div class="work-details caption">
+            <span class="work-detail">Formlabs Internship</span>
+            <hr>
+            <span class="work-detail">Fall 2024 [15 weeks]</span>
+        </div>
+        <br>
+        <div class="caption dark-blue">
+            UI/UX, Embedded Firmware [C++]
+        </div>
+
+        <br>
+        <br>
+
+        <div class="boxed-light">
+            <span class="blue">Design Goal:</span> Create a maintenance tool for users to manually move around the motors in their 3D printer.
+        </div>
+
+        <br>
+
+        <div class="caption">
+            For my intern project, I was tasked with building an entirely new feature called <span class="blue">Motor Moves</span> for the Form 4 and 4L printer line.
+            The goal was to allow the user to individually actuate the X/Y/Z motors in their 3D printer, allowing them access to hard-to-reach maintenance areas.
+        </div>
+
+        <br>
+
+        <div class="boxed-light">
+            <span class="blue">User Research:</span> How extensive should the user's control be?
+        </div>
+        <br>
+
+        <div class="info-box">
+            <div class="caption">
+                While scoping Motor Moves, I had to determine what features would be the most useful to the user without overwhelming them with unnecessary details. 
+                Some questions I investigated in this phase included:
+
+                <br><br>
+
+                <span class="blue yarndings">7</span> What are the most common scenarios in which people would want to use this tool?
+                <br><br>
+                <span class="blue yarndings">r</span> Is it reasonable to expect that any user using a <span class="underline">maintenance</span> feature has a greater level of technical know-how than the average user?
+                <br><br>
+                <span class="blue yarndings">m</span> How complex should the user's insight into the motor's movements be? This could range from an extremely simple left / right button all the way to detailed torque and current draw graphs.
+
+                <br><br>
+
+                Based on these questions, I made a design decision early on to only allow the user to move the motors to a few preset locations (e.g. left, center, right), 
+                rather than giving them precise continuous control. Although the latter case was easy to implement, I deemed it unnecessarily complicated and wanted to keep things as simple as possible.
+            </div>
+            <div class="info-box-content-vertical">
+                <img src="../img/formlabs.png" class="small">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="boxed-light">
+            <span class="blue">Key Design Consideration:</span> How can we prevent the user from injuring themselves and/or damaging the machine?
+        </div>
+
+        <br>
+
+        <div class="info-box">
+            <div class="caption">
+                What I found most interesting about this project was the need to <span class="blue">seamlessly switch between UI interactions and physical interactions</span>.
+                Because I was designing for a (high-powered and expensive) physical system, it was crucial to communicate information to the user in a way that prevented them from 
+                accidentally injuring themselves or damaging printer parts.
+
+                <br><br>
+
+                <span class="blue">Example:</span> The user could choose to remove both the <span class="italic">resin tray</span> and <span class="italic">build platform</span> when using Motor Moves, 
+                which would allow them to move their motors through a larger range of motion. However, the build platform <span class="underline">had</span> to be removed before the resin tray, because otherwise, 
+                drops of resin could drip onto the LPU (light processing unit) screen underneath, damaging it permanently. This part costs $500+ and is nontrivial to replace.
+
+                <br><br>
+                
+                <span class="blue">Solution:</span> I displayed this order of operations on the UI and prevented 
+                the user from proceeding with the tool until they acknowledged it. If either the resin tray or build platform were re-inserted into the machine mid-move, 
+                I paused the motors and asked the user to remove them.
+            </div>
+            <img src="../img/form4.webp" class="small">
+        </div>
+
+        <br><br>
+
+        <div class="info-box">
+            <img src="../img/form4-hand2.jpg" class="small">
+            <div class="caption">
+                I also had to account for <span class="blue">unexpected physical user input</span>. Although I had tight control over the touchscreen, 
+                I had limited insight into and control over the user's physical actions (e.g. opening the printer lid or adjusting mechanical components).
+
+                <br><br>
+
+                <span class="blue">Example:</span> Let's say the user initiates an x-axis motor movement all the way to the left. 
+                However, they forgot to remove a protruding screw in the movement path, and the motor rams into it and begins to stall.
+
+                <br><br>
+                
+                <span class="blue">Solution:</span> I added an "emergency stop" action that instantly stopped all motor movements. This action could be manually initiated by the user via the UI, but it 
+                would also be automatically triggered if the motor's torque spiked unnaturally. This would prevent motor damage due to obstructions as well as potential 
+                injury due to the user's hand being pinched in the motor path.
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="boxed-light">
+            <span class="blue">Implementation:</span> Building an MVP, Prototyping, and Shipping
+        </div>
+        <br>
+
+        <div class="info-box">
+            <div class="caption">
+                To actually build and ship Motor Moves within my 15-week internship, I split my time into four phases:
+                <br><br>
+                <span class="blue yarndings">j</span> Create a prototype flow in Figma and manually test it with users by directly initiating motor moves from my laptop, 
+                which was SSHed into the printer.
+                <br><br>
+                <span class="blue yarndings">o</span> Implement an MVP (using C++ and the Qt GUI framework) and perform unguided on-printer tests to identify gaps in the interaction.
+                By <span class="blue">testing early and often</span>, even before I had written any UI code, I was able to quickly nail down design decisions without too much engineering investment. 
+                <br><br>
+                <span class="blue yarndings">c</span> Code the rest of the tool and move it to pre-production for dogfooding (internal testing) and iteration.
+                <br><br>
+                <span class="blue yarndings">r</span> Ship the tool! Motor Moves was released as part of Form 4/4L firmware version 1.10.0 on November 26, 2024 :). 
+                <br><br>
+                In taking this feature all the way from conception to production, I gained valuable insight into the <span class="blue">design process and how it interacts across teams</span>, 
+                juggling factors such as release timelines, engineering resources, product stakeholder input, etc. Additionally, I learned how to <span class="blue">design for physical human-computer interaction</span>,
+                merging 2D interfaces with mechanical considerations and performing specific user research.
+                <br><br>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="caption italic">Note: for confidentiality purposes, I have omitted more detailed documentation such as Figma screenshots. However, I am happy to talk further about this project over online correspondence.</div>
+
+    </div>
+</body>
+</html>

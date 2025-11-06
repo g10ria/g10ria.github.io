@@ -1,0 +1,22 @@
+a, a:link, a:visited, a:hover, a:active {
+    all: unset;
+}
+
+.navbox {
+    display: flex;
+    width: 100%;
+    flex: auto;
+    justify-content: space-evenly;
+
+    font-size: 11pt;
+
+    margin-bottom: 50px;
+}
+
+.navoption {
+    cursor: pointer;
+}
+
+.navoption:hover {
+    color: blue;
+}

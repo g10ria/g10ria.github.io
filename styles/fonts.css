@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "JetBrainsMono-Regular";
+    src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrainsMono-RegularItalic";
+    src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Yarndings";
+    src: url("../fonts/Yarndings_20/Yarndings20-Regular.ttf") format("truetype");
+}

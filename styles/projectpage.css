@@ -1,0 +1,21 @@
+.boxed-light {
+    border: 1px dashed rgb(202, 202, 202);
+    padding: 15px;
+}
+
+.back {
+    cursor: pointer
+}
+
+.back:hover {
+    text-decoration: underline
+}
+
+img.small {
+    max-width: 20vw;
+    height: auto
+}
+
+img.medium {
+    width: 50vw;
+}

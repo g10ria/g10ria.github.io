@@ -1,0 +1,45 @@
+body {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-size: 11pt;
+}
+
+h1 {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: normal;
+    font-size: 16pt;
+}
+
+.content {
+    margin: auto;
+    width: 60vw; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.blue {
+    color: blue;
+}
+
+.dark-blue {
+    color: rgb(31, 31, 150);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-family: "JetBrainsMono-RegularItalic", sans-serif;
+}
+
+.caption {
+    font-size: 10pt;
+}
+
+.yarndings {
+    font-family: "Yarndings", "Zapf Dingbats", sans-serif;
+}
+
+a {
+    cursor: pointer !important;
+}

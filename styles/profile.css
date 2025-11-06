@@ -1,0 +1,56 @@
+.profile-pic {
+    width: 30%;
+}
+
+.info-box {
+    display: flex;
+    width: 100%;
+    flex: auto;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.info-box-content-vertical {
+    display: flex;
+    align-items: center;
+}
+
+.icons-box {
+    display: flex 
+}
+
+.icon {
+    padding: 7px;
+    border: 1px dashed rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.icon:hover {
+    border: 1px solid blue;
+}
+
+.icon:active {
+    box-shadow: inset 0 0 0 2px blue;
+}
+
+.info-box-2 {
+    display: flex;
+    width: 100%;
+    flex: auto;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-box-2-left {
+    flex-basis: calc(100% / 4 - 15px);
+}
+
+.info-box-2-right {
+    flex-basis: calc(100% / 4 * 3 - 15px);
+}
+
+.company-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
