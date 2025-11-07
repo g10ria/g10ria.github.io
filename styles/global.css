@@ -3,6 +3,13 @@ body {
     font-size: 11pt;
 }
 
+canvas {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
 h1 {
     font-family: "JetBrainsMono-Regular", sans-serif;
     font-weight: normal;
@@ -42,4 +49,56 @@ h1 {
 
 a {
     cursor: pointer !important;
+}
+
+img.small {
+    max-width: 20vw;
+    height: auto
+}
+
+img.medium {
+    width: 50vw;
+}
+
+/* ARCHIVE STUFF (MAYBE MOVE OUT LOL ) */
+
+.archive-image-box {
+    display: flex;
+    height: 15vw;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    gap: 10px
+}
+
+.archive-image {
+    max-height: 100%;
+    border-radius: 5px
+}
+
+.archive-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.archive-title {
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+.archive-details {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.archive-item {
+    flex-basis: calc(100% / 2 - 30px);
+    box-sizing: border-box;
+    border: 1px dashed rgb(202, 202, 202);
+    padding: 15px;
+}
+
+.archive-item-full {
+    flex-basis: calc(100%)
 }

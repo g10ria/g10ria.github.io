@@ -10,12 +10,3 @@
 .back:hover {
     text-decoration: underline
 }
-
-img.small {
-    max-width: 20vw;
-    height: auto
-}
-
-img.medium {
-    width: 50vw;
-}

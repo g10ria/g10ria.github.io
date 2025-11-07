@@ -41,7 +41,11 @@ hr {
     box-sizing: border-box;
     border: 1px dashed rgb(202, 202, 202);
     padding: 15px;
-    /* transition: box-shadow 0.2s ease-in-out; */
+    background-color: rgba(255, 255, 255, 200)
+}
+
+.work-item-full {
+    flex-basis: calc(100%)
 }
 
 .work-item:hover {
