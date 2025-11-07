@@ -55,30 +55,102 @@
         <br>
 
         <div class="info-box caption">
-            <div class="info-box-content-vertical">
-                The idea for this project came about when I was trying to design and print educational zines for my art history class. 
-                I found that the process to go from Adobe Illustrator all the way to printing and cutting was unnecessarily cumbersome, requiring knowledge of color modes, bleed, swatches, etc. 
-                Thus, I wanted to create an online tool that anyone could use to easily create and export their own physical printed matter.
+            <div>
+                I had the idea for this project when I was trying to design and print educational zines for my art history class. 
+                I found that the process to go from Adobe Illustrator all the way to printing and cutting was <span class="blue">unnecessarily cumbersome</span>, requiring knowledge of color modes, bleed, swatches, etc. 
+                <br><br>
+                <span class="italic">zines are small, usually hand-made books made to share art and writing on just about any topic --> </span>
             </div>
             <div>
-                <img src="../img/zinemaker.jpg" class="small">
+                <img src="../img/zine/minizines.webp" class="tiny">
             </div>
         </div>
 
-        <br>
+        <br><br>
+
+        <div class="info-box caption">
+            <div>
+                <img src="../img/zine/programs-2.jpg" class="tiny">
+            </div>
+            <div>
+                <-- For example, for this zine I created in sophomore year, I had to go through several rounds of test prints and printer registration after the actual graphic design 
+                before actually being able to print and assemble it.
+                Thus, I wanted to create an <span class="blue">online tool</span> that anyone could use to <span class="blue">easily design and export zine print files</span>.
+            </div>
+
+        </div>
+
+        <br><br>
 
         <div class="boxed-light">
-            <span class="blue">Key Consideration:</span> How can I keep the interface visually simple while still giving the user fine-grained tools?
+            <span class="blue">Key Design Consideration:</span> How can I keep the interface visually simple while still giving the user fine-grained tools?
         </div>
 
         <br>
 
         <div class="info-box caption">
             <div>
-                <img src="../img/zinemaker.jpg" class="small">
+                I didn't want to just make a general purpose online paint tool — instead, I was more interested in evoking a sort of digital collage experience. 
+                To that end, I wanted to keep the interface <span class="blue">visually simple</span> and <span class="blue">immediately understandable</span>, 
+                akin to a table with collage supplies strewn across it.
             </div>
             <div>
-                erm add more content here lol
+                <img src="../img/zine/collaging.webp" class="small">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="info-box caption">
+            <div>
+                <img src="../img/zine/sketch1.png" class="medsmall">
+            </div>
+            <div>
+                My first idea was a <span class="blue">freeform clipping-mask-based interface</span>, where the user could drag around images, text, and the page borders themselves, 
+                creating a new way of composing layouts.
+                <br><br>
+                However, I found this a bit too unstructured and not immediately intuitive.
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="info-box caption">
+            <div>
+                Next, I went to the other end of the spectrum and mocked up a much more <span class="blue">standard design interface</span>. The left column would contain collage elements 
+                (e.g. existing images and text), whereas the right column would include various collage tools reminiscent of physical tools, such as scissors, a "glue stick,"
+                and pens and pencils.
+                <br><br>
+                However, I thought that this design was a bit too on the nose, and it was a little too busy.
+            </div>
+            <div>
+                <img src="../img/zine/sketch2.png" class="medsmall">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="info-box caption">
+            <div>
+                <img src="../img/zine/sketch3.png" class="medsmall">
+            </div>
+            <div>
+                Finally, I settled on a <span class="blue">happy medium</span> in which the user would have access to a limited set of collage tools and media.
+                The pages would be laid out in such a way that still enabled interesting clipping-mask-based interactions and animations.
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="info-box caption">
+            <div>
+                <img src="../img/zine/sketchctrl.png" class="small">
+            </div>
+            <div>
+                Currently, I'm implementing a low-fidelity prototype using p5.js, which I will use to test with a couple users and determine how
+                I want the central tools panel to look. Updates soon!
+                <br><br>
+                <span class="italic"><-- ideas for the central tools panel, inspired by the aesthetic of DJ boards</span>
             </div>
         </div>
 
