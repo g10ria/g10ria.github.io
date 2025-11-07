@@ -46,11 +46,11 @@
 }
 
 .info-box-2-left {
-    flex-basis: calc(100% / 4 - 15px);
+    flex-basis: calc(100% / 5 - 15px);
 }
 
 .info-box-2-right {
-    flex-basis: calc(100% / 4 * 3 - 15px);
+    flex-basis: calc(100% / 5 * 4 - 15px);
 }
 
 .company-link {

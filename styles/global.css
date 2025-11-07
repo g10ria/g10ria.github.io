@@ -1,6 +1,7 @@
 body {
     font-family: "JetBrainsMono-Regular", sans-serif;
     font-size: 11pt;
+    padding-bottom: 40px;
 }
 
 canvas {
@@ -51,9 +52,22 @@ a {
     cursor: pointer !important;
 }
 
+img {
+    border-radius: 5px;
+}
+
+img.tiny {
+    max-width: 14vw;
+}
+
 img.small {
     max-width: 20vw;
     height: auto
+}
+
+img.medsmall {
+    width: 35vw;
+    height: auto;
 }
 
 img.medium {
@@ -101,4 +115,16 @@ img.medium {
 
 .archive-item-full {
     flex-basis: calc(100%)
+}
+
+.illustration-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.illustration-item {
+    height: 15vw;
+    border-radius: 5px;
 }

@@ -13,6 +13,8 @@
 
     <script src="scripts/linkattach.js"></script>
     <script src="scripts/navbounce.js"></script>
+
+    <link rel="icon" href="/styles/asterisk.svg" type="image/x-icon">
 </head>
 <body>
     <div class="content">
@@ -31,15 +33,56 @@
 
         <div class="description-box">
             <p>
-                My love for design is built on my broader experience making things across engineering and art. 
+                My approach to design is built upon my general love for making things, whether I'm assembling a mechatronics contraption or painting en plein air.
+                This page includes my personal projects spanning engineering and art, including some more experimental work.
             </p>
             <p class="italic caption">
-                To see my projects within <span class="blue">robotics</span> (Arduino, electronics, CAD), <span class="blue">conceptual art</span>, and <span class="blue">illustration</span>,
-                check out the <span class="underline"><a href="/archive.html">Archive</a></span>.
+                Note: I'm working on writing up dedicated pages for some of these projects, but for now they just live here :)
             </p>
         </div>
 
+        <div class="blue italic">
+            Robotics/Mechatronics Projects:
+        </div>
+        <br>
+        <div class="caption">
+            I entered college coming from a primarily mechanical engineering background, and I've always loved tinkering with electronics and experimenting with mechanical systems.
+        </div>
+
+        <br>
+
         <div class="archive-box">
+
+            <div class="archive-item archive-item-full">
+                <div class="archive-title">Thermal Camera</div>
+                <div class="archive-details caption">
+                    <span class="archive-detail">Class Project (made for 4.031 - Objects and Interaction)</span>
+                    <hr>
+                    <span class="archive-detail">Fall 2024</span>
+                </div>
+                <div class="caption dark-blue">
+                    Arduino [C++], Electronics [Thermal printing, Physical UI], CAD, 3D Printing, Sheet Metal Bending
+                </div>
+                <br>
+                <div class="info-box">
+                    <div class="caption">
+                        In collaboration with my teammate Teresa, we designed, tested, and manufactured this handheld instant camera that adds an element of gamification to the process of taking a photo.
+                        <br><br>
+                        When taking a photo, the user plays a short LED-button-matching game. Their final score determines the clarity of their photograph, which is printed out onto thermal paper for them to tear off and take away as a memento.
+                        <br><br>
+                        Links:
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=hvIzN8XrWyQ" target="_blank"><span class="underline">Demo Video</span></a>
+                        <br>
+                        <a href="https://docs.google.com/presentation/d/1sbfvPfXunLsSH4NDv0V0W8U4NX4jaILSYyNPD-hDg7Y/edit?usp=sharing" target="_blank"><span class="underline">Project Presentation</span></a>
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/thermal1.png" class="archive-image">
+                        <img src="./img/thermal2.jpg" class="archive-image">
+                    </div>
+                </div>
+            </div>
+
             <div class="archive-item archive-item-full">
                 <div class="archive-title">Calligraphy Robot</div>
                 <div class="archive-details caption">
@@ -48,73 +91,183 @@
                     <span class="archive-detail">Spring 2024</span>
                 </div>
                 <div class="caption dark-blue">
-                    Arduino [C++], Electronics, CAD, Path Planning
+                    Arduino [C++], Electronics [Motor control, Physical UI], CAD, 3D Printing, Path Planning [Python]
                 </div>
                 <br>
                 <div class="info-box">
-                <div class="caption">
-                    a bunch of text here
-                </div>
-                <div class="archive-image-box">
-                    <img src="./img/scribebot1.jpg" class="archive-image">
-                    <img src="./img/scribebot2.jpg" class="archive-image">
-                </div>
-                </div>
-            </div>
-
-            <div class="archive-item">
-                <div class="archive-title">Thermal Camera</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Class Project</span>
-                    <hr>
-                    <span class="archive-detail">Fall 2024</span>
-                </div>
-                <div class="caption dark-blue">
-                    Arduino [C++], Electronics, CAD, Path Planning
-                </div>
-                <br>
-                <div class="caption">
-                    stuff here
-                </div>
-                <br>
-                <div class="archive-image-box">
-                    <img src="./img/scribebot1.jpg" class="archive-image">
+                    <div class="caption">
+                        I made this robot with my classmate Lee! Essentially, we built a standard 3-axis pen plotter (X/Y/Z) and then added 
+                        2 rotational degrees of freedom (pitch/yaw), allowing the robot to "draw" with and tilt a brush pen to create variable-width calligraphic strokes.
+                        <br><br>
+                        Links:
+                        <br>
+                        <a href="https://www.technologyreview.com/2025/02/14/1111224/calligraphy-bot/" target="_blank"><span class="underline">MIT Technology Review Article</span></a>
+                        <br><br>
+                        <a href="https://github.com/g10ria/scribebot" target="_blank"><span class="underline">Source Code</span></a>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=_LLspTuF1IU" target="_blank"><span class="underline">Demo Clip</span></a>
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/scribebot1.jpg" class="archive-image">
+                        <img src="./img/scribebot2.jpg" class="archive-image">
+                    </div>
                 </div>
             </div>
 
-            <div class="archive-item">
-                <div class="archive-title">Chess Robot ("Magnets" Carlsen)</div>
+            <div class="archive-item archive-item-full">
+                <div class="archive-title">Chess Robot (aka "Magnets" Carlsen)</div>
                 <div class="archive-details caption">
                     <span class="archive-detail">Independent Project</span>
                     <hr>
                     <span class="archive-detail">Spring 2023</span>
                 </div>
                 <div class="caption dark-blue">
-                    Arduino [C++], Electronics, CAD, Path Planning
+                    Arduino [C++], Electronics, CAD
                 </div>
                 <br>
-                <div class="caption">
-                    stuff here
+                <div class="info-box">
+                    <div class="caption">
+                        I primarily helped out with CAD and mechanical design for this project, which I worked on with classmates Eric, Claudius, and Keiji. 
+                        With the power of electromagnets, a thin carbon-fiber gameboard, a CoreXY gantry, and the Stockfish chess engine, this robot beats just about anyone at Chess!
+                        <br><br>
+                        Links:
+                        <br>
+                        <a href="https://kogappa.com/projects/mags/" target="_blank"><span class="underline">Keiji's (much more detailed) blog post</span></a>
+                        <br>
+                        <a href="https://design.mit.edu/news/mags-the-chess-playing-robot" target="_blank"><span class="underline">MIT Design Article</span></a>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=14NL_39Ftnc" target="_blank"><span class="underline">Demo Video</span></a>
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/mags.png" class="archive-image">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <div class="blue italic">
+            Conceptual Art Projects:
+        </div>
+        <br>
+        <div class="caption">
+            I love contemporary art, particularly new media/ technological art and work that deals with themes of multiplicity, mass culture, and media theory.
+        </div>
+
+        <br>
+
+        <div class="archive-box">
+
+            <div class="archive-item archive-item-full">
+                <div class="archive-title">Forecaster</div>
+                <div class="archive-details caption">
+                    <span class="archive-detail">Independent Project</span>
+                    <hr>
+                    <span class="archive-detail">Fall 2025</span>
+                </div>
+                <div class="caption dark-blue">
+                    Raspberry Pi, Electronics
                 </div>
                 <br>
-                <div class="archive-image-box">
-                    <img src="./img/scribebot1.jpg" class="archive-image">
+                <div class="info-box">
+                    <div class="caption">
+                        Parodying predictive technologies such as horoscopes, this project seeks to examine how we do (or don't) allow automated technologies to dictate the ways we perceive reality.
+                        Every minute, this bot scrapes three random adjectives from the internet and rotates it into its "good morning" copy text. 
+                        <br><br>
+                        I installed it in our apartment's shared living room over a period of one month and collected my roommates' responses to the object.
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/forecast1.jpg" class="archive-image">
+                        <img src="./img/forecast2.jpg" class="archive-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="archive-item archive-item-full">
+                <div class="archive-title">sixty sixty one</div>
+                <div class="archive-details caption">
+                    <span class="archive-detail">Independent Project</span>
+                    <hr>
+                    <span class="archive-detail">Fall 2023</span>
+                </div>
+                <div class="caption dark-blue">
+                    Laser Cutting, Sheet Metal Bending, Photography, Editorial Design
+                </div>
+                <br>
+                <div class="info-box">
+                    <div class="caption">
+                        I led this project in sophomore year, overseeing creative direction and fabrication. 
+                        Using bent sheet aluminum (alloy 6061!), we created and photographed metal garments inspired by forms and tensions drawn from nature.
+                        <br><br>
+                        Team: Teresa, Lindsay, Lee, Fernando, Anna, Sabine, Bukunmi, Joanna, Michelle
+                        <br><br>
+                        Links:
+                        <br>
+                        <a href="https://mad.mit.edu/news/sixty-sixty-one-from-aluminum-alloy-to-wearables" target="_blank"><span class="underline">MIT Design Article</span></a>
+                        <br>
+                        <a href="https://www.instagram.com/p/C7O8F2zAslH/?img_index=1" target="_blank"><span class="underline">Post on @mit Instagram</span></a>
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/60613.jpg" class="archive-image">
+                        <img src="./img/6061mannequin.jpg" class="archive-image">
+                        <img src="./img/6061headpiece.jpg" class="archive-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="archive-item archive-item-full">
+                <div class="archive-title">Clay Bodies</div>
+                <div class="archive-details caption">
+                    <span class="archive-detail">Independent Project</span>
+                    <hr>
+                    <span class="archive-detail">Fall 2024</span>
+                </div>
+                <div class="caption dark-blue">
+                    Sewing, Quilting, Photography
+                </div>
+                <br>
+                <div class="info-box">
+                    <div class="caption">
+                        I led this project in junior year, seeking to examine the ways we interact with and internalize our physical bodies. By sewing and stuffing a life-size 
+                        facsimile of a human body, I wanted to create a sense of eerie intimacy and tautness through photography.
+                        <br><br>
+                        Team: Michelle, Fernando, Sabine, Arielsie, Emily, Anna, Ernesto
+                    </div>
+                    <div class="archive-image-box">
+                        <img src="./img/sabine1.JPG" class="archive-image">
+                        <img src="./img/sabine2.JPG" class="archive-image">
+                    </div>
                 </div>
             </div>
         </div>
 
         <br><br>
 
-        <div class="description-box">
-            <p>
-                stuff about conceptual art
-            </p>
-            <p class="italic caption">
-                To see my projects within <span class="blue">robotics</span> (Arduino, electronics, CAD), <span class="blue">conceptual art</span>, and <span class="blue">illustration</span>,
-                check out the <span class="underline"><a href="/archive.html">Archive</a></span>.
-            </p>
+        <div class="blue italic">
+            Illustration:
+        </div>
+        <br>
+        <div class="caption">
+            I've been drawing and painting for as long as I can remember! My favorite mediums are gouache paint and black ink, and I especially like to draw plants and fantasy worlds.
         </div>
 
+        <br>
+
+        <div class="illustration-box">
+            <img src="./img/illust/cable_car.png" class="illustration-item">
+            <img src="./img/illust/deadrabbits.png" class="illustration-item">
+            <img src="./img/illust/fishgouache.jpg" class="illustration-item">
+            <img src="./img/illust/idol.png" class="illustration-item">
+            <img src="./img/illust/Ribs.png" class="illustration-item">
+            <img src="./img/illust/nyc_plant_store.png" class="illustration-item">
+            <img src="./img/illust/inkdrawing.png" class="illustration-item">
+            <img src="./img/illust/yearoftherabbit.png" class="illustration-item">
+            <img src="./img/illust/left.JPG" class="illustration-item">
+            <img src="./img/illust/right.JPG" class="illustration-item">
+            <!-- <img src="./img/illust/undersea.webp" class="illustration-item"> -->
+        </div>
 
     </div>
 </body>
