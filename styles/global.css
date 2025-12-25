@@ -24,6 +24,12 @@ h1 {
     padding-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+    .content {
+        width: 90vw;
+    }
+}
+
 .blue {
     color: blue;
 }
@@ -127,4 +133,38 @@ img.medium {
 .illustration-item {
     height: 15vw;
     border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    .archive-box {
+        text-align: center;
+    }
+    .archive-image-box {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .archive-image-box img:not(:first-child) {
+        display: none;
+    }
+    .archive-image {
+        max-height: 30vh;
+        max-width: 90%;
+    }
+    .archive-details {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+    hr {
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    .archive-detail {
+        flex-basis: 100%;
+    }
+    .illustration-item {
+        width: 100%;
+        height: auto;
+    }
 }

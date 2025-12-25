@@ -57,3 +57,39 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+@media (max-width: 767px) {
+    .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-pic {
+        object-fit: cover;
+        max-width: 100%;
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
+        margin-bottom: 0;
+    }
+    .profile-caption {
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .icons-box {
+        justify-content: center;
+    }
+
+    .info-box-2 {
+        gap: 0;
+        text-align: center;
+    }
+    .info-box-2-left {
+        flex-basis: 100%;
+        text-decoration: underline;
+    }
+    .info-box-2-right {
+        flex-basis: 100%;
+    }
+}

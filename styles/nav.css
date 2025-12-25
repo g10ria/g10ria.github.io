@@ -20,3 +20,11 @@ a, a:link, a:visited, a:hover, a:active {
 .navoption:hover {
     color: blue;
 }
+
+@media (max-width: 767px) {
+    .navbox {
+        gap: 15px;
+        flex-direction: column;
+        margin-top: 0;
+    }
+}
