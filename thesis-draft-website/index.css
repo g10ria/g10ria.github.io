@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "JetBrainsMono-Regular";
+    src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrainsMono-RegularItalic";
+    src: url("../fonts/JetBrains_Mono/static/JetBrainsMono-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Yarndings";
+    src: url("../fonts/Yarndings_20/Yarndings20-Regular.ttf") format("truetype");
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+body {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-size: 11pt;
+    padding-bottom: 40px;
+    /* user-select: none; */
+    margin: 0;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: "JetBrainsMono-Regular", sans-serif;
+    font-weight: normal;
+    font-size: 16pt;
+
+    margin-bottom: 0;
+}
+
+.blue {
+    color: rgb(44, 44, 179);
+}
+
+/* Styles for the details/summary elements  */
+
+summary {
+    list-style-type: '+ ';
+}
+
+details {
+    cursor: pointer;
+    width: 100%;
+
+    &[open] {
+        margin-bottom: 10px;
+    }
+
+    &[open] > summary {
+        list-style-type: '- ';
+    }
+
+    &::details-content {
+        opacity: 0;
+        transition: opacity 0.1s;
+    }
+    &[open]::details-content {
+        opacity: 1;
+    }
+}
+
+#expand-collapse {
+    font-size: 9pt;
+    cursor: pointer;
+    /* color:rgb(118, 118, 118); */
+}
+
+#expand-collapse:hover {
+    text-decoration: underline;
+}
+
+summary:hover {
+    background-color:rgba(205, 205, 205, 0.3);
+}
+
+summary::marker {
+    font-size: 1.1em;
+    color: rgb(44, 44, 179);
+}
+
+.div-details {
+    /* max-width: 80%; */
+    margin-left: 25px;
+    margin-top: 5px;
+    /* color: rgb(46, 46, 46); */
+    font-size: 10pt;
+    border: 1px solid;
+    border-color: rgb(188, 188, 188);
+    padding: 10px 15px;
+}
+
+.content {
+    margin: auto;
+    width: 60vw; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .content {
+        width: 90vw;
+    }
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.italic {
+    font-family: "JetBrainsMono-RegularItalic", sans-serif;
+}
+
+.caption {
+    font-size: 10pt;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+img {
+    user-select: none;
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.hero_image {
+    width: 30vw;
+}
+
+.piece_image {
+    margin: 15px;
+    width: 25vw;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    img {
+        width: 60vw;
+    }
+}
