@@ -144,6 +144,10 @@ canvas {
     text-align: center;
 }
 
+.italic {
+    font-style: italic;
+}
+
 @media (max-width: 767px) {
     img {
         width: 60vw;
