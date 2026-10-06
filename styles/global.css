@@ -1,10 +1,5 @@
 @import url("theme.css");
 
-/* the root gets the page color too, so nothing else can show behind or beyond the page (overscroll, short pages) */
-html {
-    background-color: var(--bg);
-}
-
 body {
     background-color: var(--bg);
     color: var(--fg);
