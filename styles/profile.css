@@ -70,9 +70,10 @@
     .profile-pic {
         object-fit: cover;
         max-width: 100%;
-        width: 100px;
-        height: 100px;
-        border-radius: 125px;
+        width: clamp(160px, 46vw, 240px); /* a big round portrait on a phone */
+        height: clamp(160px, 46vw, 240px);
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
         margin-bottom: 0;
     }
     .profile-caption {
@@ -109,7 +110,7 @@
         text-align: left;
     }
     .profile-page .profile-pic {
-        margin-right: auto;
+        margin: 0 auto; /* centered on a phone */
     }
     .profile-page .icons-box {
         justify-content: flex-start;
@@ -157,6 +158,12 @@
     .profile-page .offset-box {
         max-width: none;
         margin-left: 0;
+        margin-top: 16px;
+    }
+    /* the spacer line breaks between the two text boxes are what made the gap so tall; a phone just needs a small one */
+    .profile-page .content > br,
+    .profile-page .info-box > br {
+        display: none;
     }
 }
 
@@ -311,4 +318,13 @@
 
 .profile-page .lead {
     color: var(--fg);
+}
+
+/* touch screens: the "+"/"-" button that opens the second box gets a bigger tap target */
+@media (hover: none) {
+    .toggle-btn {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
 }

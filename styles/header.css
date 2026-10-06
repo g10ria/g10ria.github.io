@@ -13,20 +13,15 @@
 
 .nametag {
     font-family: "Tangerine", cursive;
-    font-size: 4vw;
+    font-size: clamp(40px, 4vw, 64px);
     font-weight: 800;
     margin-bottom: 15px;
 }
 
-@media (max-width: 767px) {
-    :is(.profile-page, .work-page, .left-nav, .archive-page) .navbox {
-        gap: 15px;
-        align-items: flex-start;
-    }
-}
 
-/* project pages: media fills its column instead of using fixed vw sizes */
-@media (min-width: 768px) {
+/* project pages: media fills its column instead of using fixed vw sizes.
+   Side-by-side label + media layout only from 961px up; below that the label stacks above its media. */
+@media (min-width: 961px) {
     .left-nav .info-box-2-right {
         display: flex;
         flex-wrap: wrap;
@@ -235,4 +230,178 @@
     --fg: #ececec;
     --border: #4a4a4a;
     --box-fill: #000000;
+}
+
+/* ---------------------------------------------------------------------------
+   phones and tablets (up to 960px): label stacks above its media
+   --------------------------------------------------------------------------- */
+@media (max-width: 960px) {
+    /* the stacked layout: the label and the media each take the full row */
+    .left-nav .info-box-2-left,
+    .left-nav .info-box-2-right {
+        flex-basis: 100%;
+    }
+    .left-nav .info-box-2-right::before {
+        content: none;
+    }
+    .left-nav .info-box-2-right video.project-video,
+    .left-nav .info-box-2-right > img {
+        max-width: 760px;
+    }
+
+    /* project pages: intro blurbs and their buttons are left-aligned (profile.css centers .info-box on phones) */
+    .left-nav .info-box {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    /* project pages: labels sit above their media, left-aligned and not underlined (profile.css centers/underlines them) */
+    .left-nav .info-box-2 {
+        text-align: left;
+        gap: 12px 0;
+    }
+    .left-nav .info-box-2.roomy {
+        row-gap: 40px;
+    }
+    .left-nav .info-box-2-left {
+        text-decoration: none;
+    }
+    .left-nav .info-box-2-right {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    /* single images and videos fill the width of the screen instead of keeping their natural size */
+    .left-nav .info-box-2-right video.project-video,
+    .left-nav .info-box-2-right > img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .left-nav .info-box-2-right video.project-video.video-vertical {
+        width: calc((100% - 10px) / 2);
+    }
+    .left-nav .info-box-2-right video.project-video.video-smaller {
+        width: 75%;
+    }
+
+    /* grids: same arrangements as on desktop, sized to the screen */
+    .left-nav .info-box-2-right .page-grid,
+    .left-nav .info-box-2-right .program-strip,
+    .left-nav .info-box-2-right .poster-grid,
+    .left-nav .info-box-2-right .sketch-grid,
+    .left-nav .info-box-2-right .balanced-row {
+        width: 100%;
+        min-width: 0;
+    }
+    .left-nav .info-box-2-right .page-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .left-nav .info-box-2-right img.page {
+        display: block;
+        width: calc((100% - 16px) / 3);
+        height: auto;
+    }
+    .left-nav .info-box-2-right img.big {
+        display: block;
+        width: calc((100% - 10px) / 2);
+        height: auto;
+    }
+    .left-nav .info-box-2-right .poster-grid {
+        column-count: 2;
+        column-gap: 8px;
+    }
+    .left-nav .info-box-2-right .poster-grid img.poster {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+        break-inside: avoid;
+    }
+    .left-nav .info-box-2-right .program-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .left-nav .info-box-2-right .program-strip > img {
+        width: calc((100% - 16px) / 3);
+        height: auto;
+    }
+    .left-nav .info-box-2-right .program-strip .spread {
+        display: flex;
+        width: calc((100% - 16px) / 3 * 2);
+    }
+    .left-nav .info-box-2-right .program-strip .spread img {
+        display: block;
+        width: 50%;
+        height: auto;
+        border-radius: 0;
+    }
+    .left-nav .info-box-2-right .program-strip .spread img:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    .left-nav .info-box-2-right .program-strip .spread img:last-child {
+        border-radius: 0 5px 5px 0;
+    }
+    .left-nav .info-box-2-right .sketch-grid {
+        display: block;
+    }
+    .left-nav .info-box-2-right .sketch-grid > img.sketch {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .left-nav .info-box-2-right .sketch-pair {
+        display: flex;
+        gap: 10px;
+    }
+    .left-nav .info-box-2-right .sketch-pair img.sketch {
+        display: block;
+        width: calc((100% - 10px) / 2);
+        height: auto;
+    }
+    /* photos of different shapes: stacked full width on a phone, so each is big enough to see */
+    .left-nav .info-box-2-right .balanced-row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .left-nav .info-box-2-right .balanced-row img {
+        flex: none;
+        width: 100%;
+        min-width: 0;
+        display: block;
+        height: auto;
+    }
+}
+
+/* phones (< 768px) */
+@media (max-width: 767px) {
+    /* the nametag is the first thing on a phone: make it big */
+    .nametag {
+        font-size: clamp(56px, 15vw, 80px);
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    /* header: the three links sit in one row, with taller tap targets */
+    :is(.profile-page, .work-page, .left-nav, .archive-page) .navbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0 22px;
+        margin-bottom: 28px;
+    }
+    /* the padding goes on the link itself so the whole padded area is tappable (nav.css resets links with all: unset) */
+    .navoption a:link,
+    .navoption a:visited {
+        display: inline-block;
+        padding: 10px 0;
+    }
 }

@@ -153,7 +153,12 @@ button.slide-btn:focus-visible {
 
 @media (max-width: 767px) {
     .archive-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    .archive-grid + .archive-heading,
+    .archive-heading {
+        margin-top: 36px;
     }
 }
 
@@ -171,16 +176,25 @@ button.slide-btn:focus-visible {
         z-index: 2;
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        gap: 8px;
-        padding: 28px 12px 10px;
+        align-items: flex-end;
+        gap: 6px;
+        padding: 22px 8px 6px;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
-        font-size: 13pt;
+        font-size: 10pt;
+        line-height: 1.25;
         border-radius: 0 0 5px 5px;
         pointer-events: none;
+        white-space: normal;
+    }
+    .slide-title .slide-name {
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
     button.slide-btn {
         opacity: 1;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
     }
 }
 
@@ -278,4 +292,32 @@ button.lightbox-next {
 .lightbox-count {
     font-size: 9pt;
     opacity: 0.6;
+}
+
+/* phones: lightbox controls get a backing so they stay visible over the picture, and the picture can use the width */
+@media (max-width: 767px) {
+    button.lightbox-btn {
+        background-color: rgba(0, 0, 0, 0.55);
+        border-radius: 50%;
+    }
+    button.lightbox-prev {
+        left: 10px;
+    }
+    button.lightbox-next {
+        right: 10px;
+    }
+    button.lightbox-close {
+        top: 12px;
+        right: 12px;
+    }
+    .lightbox-img {
+        max-width: 96vw;
+        max-height: 80vh;
+    }
+    .lightbox-caption {
+        left: 14px;
+        bottom: 14px;
+        right: 14px;
+        flex-wrap: wrap;
+    }
 }

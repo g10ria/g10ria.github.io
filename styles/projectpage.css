@@ -84,14 +84,20 @@ a.link-btn:link:active {
 /* script-font project title (Tangerine, same as the profile nametag) */
 .script-title {
     font-family: "Tangerine", cursive;
-    font-size: 4vw;
+    font-size: clamp(34px, 4vw, 60px);
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
 }
 
-/* intro blurb: a narrow, vertical column of text */
+/* intro blurb: a narrow, vertical column of text (wider on tablets, where 30vw would be too thin to read) */
 @media (min-width: 768px) {
+    .blurb {
+        max-width: 60vw;
+    }
+}
+
+@media (min-width: 961px) {
     .blurb {
         max-width: 30vw;
     }
@@ -114,6 +120,12 @@ a.link-btn:link:active {
 
 /* a longer passage of body text: wider than the 30vw intro blurb */
 @media (min-width: 768px) {
+    .blurb.wide {
+        max-width: 70vw;
+    }
+}
+
+@media (min-width: 961px) {
     .blurb.wide {
         max-width: 45vw;
     }
@@ -146,5 +158,21 @@ a.link-btn:link:active {
 @media (max-width: 767px) {
     .corner-zines {
         display: none;
+    }
+}
+
+/* phones: the small boxed buttons get bigger tap targets */
+@media (max-width: 767px) {
+    a.back-btn:link, a.back-btn:visited,
+    a.link-btn:link, a.link-btn:visited {
+        padding: 9px 14px;
+    }
+}
+
+/* tablets: the Discipline / Mediums boxes keep a comfortable width */
+@media (min-width: 768px) and (max-width: 960px) {
+    .meta-domain,
+    .meta-tools {
+        flex: 0 1 260px;
     }
 }
