@@ -14,7 +14,6 @@
     font-weight: normal;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    opacity: 0.8;
 }
 
 /* a heading that starts a new category sits well below the previous grid */
@@ -135,7 +134,6 @@ button.slide-btn:focus-visible {
 .slide-count {
     flex: none;
     font-size: 9pt;
-    opacity: 0.7;
 }
 
 /* 5 tiles per row by default, stepping down on narrower windows */
@@ -206,7 +204,7 @@ button.slide-btn:focus-visible {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.94);
+    background-color: #000; /* fully black: nothing from the page behind shows through */
     opacity: 0;
     transition: opacity 0.2s ease-out;
 }
@@ -291,7 +289,6 @@ button.lightbox-next {
 
 .lightbox-count {
     font-size: 9pt;
-    opacity: 0.6;
 }
 
 /* phones: lightbox controls get a backing so they stay visible over the picture, and the picture can use the width */

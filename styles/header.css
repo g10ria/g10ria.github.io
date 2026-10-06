@@ -224,8 +224,9 @@
     }
 }
 
-/* archive page: same dark theme as the profile page */
-:root:has(body.archive-page) {
+/* archive and My Work pages: same dark theme as the profile page */
+:root:has(body.archive-page),
+:root:has(body.work-page) {
     --bg: #000000;
     --fg: #ececec;
     --border: #4a4a4a;

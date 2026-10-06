@@ -29,12 +29,10 @@
 .archive-tooltip-count {
     flex: none;
     font-size: 9pt;
-    opacity: 0.6;
 }
 
 .archive-tooltip-desc {
     margin-top: 6px;
     font-size: 9.5pt;
     line-height: 1.45;
-    opacity: 0.8;
 }

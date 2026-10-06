@@ -278,7 +278,7 @@
     --fg: #ececec;
     --border: #4a4a4a;
     --box-fill: #000000; /* opaque, so blossoms and the trail stay behind the boxes */
-    --fg-dim: #cfcfcf; /* body text under the lead sentence: a slightly grayer white */
+    --fg-dim: var(--fg); /* body text under the lead sentence; set to e.g. #cfcfcf to dim it again */
 }
 
 /* yarndings blossoms that follow the mouse (scripts/blossom.js): grow in, then shrink and fade.
