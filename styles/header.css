@@ -1,0 +1,238 @@
+/* shared header + column layout for the left-aligned pages (index and work).
+   .left-nav is the project-page variant: same wide column and nav. */
+
+:is(.profile-page, .work-page, .left-nav, .archive-page) .content {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+:is(.profile-page, .work-page, .left-nav, .archive-page) .navbox {
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.nametag {
+    font-family: "Tangerine", cursive;
+    font-size: 4vw;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    :is(.profile-page, .work-page, .left-nav, .archive-page) .navbox {
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
+
+/* project pages: media fills its column instead of using fixed vw sizes */
+@media (min-width: 768px) {
+    .left-nav .info-box-2-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        gap: 12px;
+        justify-content: flex-end; /* media sits against the right edge of the page */
+    }
+    .left-nav .info-box-2-right img.medsmall {
+        width: 100%;
+    }
+    /* a dotted line runs from the label column across to the video, level with the label's first line */
+    .left-nav .info-box-2-right::before {
+        content: "";
+        flex: 1 1 0;
+        align-self: flex-start;
+        margin-top: 9px;
+        border-top: 1px dotted var(--border);
+    }
+    /* every project video takes 70% of the media column */
+    .left-nav .info-box-2-right video.project-video {
+        width: 70%;
+        height: auto;
+        border-radius: 5px;
+    }
+    /* a video that was never big to begin with: shown smaller than the standard 70% */
+    .left-nav .info-box-2-right video.project-video.video-smaller {
+        width: 50%;
+    }
+    /* tall (9:16) videos: narrower, so they are not taller than the screen */
+    .left-nav .info-box-2-right video.project-video.video-vertical {
+        width: 28%;
+    }
+    /* a small grid of pages: three across, together exactly as wide as the lead image (70% of the column) */
+    .left-nav .info-box-2-right .page-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        width: 70%;
+    }
+    /* more vertical space between rows */
+    .left-nav .info-box-2.roomy {
+        row-gap: 90px;
+    }
+    /* tickets row: the dotted line gets its own line, then two big images, then three smaller ones */
+    .left-nav .info-box-2-right.ticket-row::before,
+    .left-nav .info-box-2-right.poster-row::before,
+    .left-nav .info-box-2-right.program-row::before {
+        flex: 1 1 100%;
+    }
+    /* booklet pages: 5 pages per line; facing pages (.spread) touch with no gap, units are 12px apart */
+    .left-nav .info-box-2-right .program-strip {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: flex-start;
+    }
+    .left-nav .info-box-2-right .program-strip > img {
+        width: calc((100% - 24px) / 5);
+        height: auto;
+    }
+    .left-nav .info-box-2-right .program-strip .spread {
+        display: flex;
+        width: calc((100% - 24px) / 5 * 2);
+    }
+    .left-nav .info-box-2-right .program-strip .spread img {
+        display: block;
+        width: 50%;
+        height: auto;
+        border-radius: 0;
+    }
+    .left-nav .info-box-2-right .program-strip .spread img:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+    .left-nav .info-box-2-right .program-strip .spread img:last-child {
+        border-radius: 0 5px 5px 0;
+    }
+    /* sketches: three wide ones stacked at half the column, then two smaller ones side by side below them */
+    .left-nav .info-box-2-right .sketch-grid {
+        width: 50%;
+    }
+    .left-nav .info-box-2-right .sketch-grid > img.sketch {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+    .left-nav .info-box-2-right .sketch-pair {
+        display: flex;
+        gap: 12px;
+    }
+    .left-nav .info-box-2-right .sketch-pair img.sketch {
+        display: block;
+        width: calc((100% - 12px) / 2);
+        height: auto;
+    }
+    /* a row of photos of different shapes, all the same height: each image gets width in proportion to its aspect ratio (--ar) */
+    .left-nav .info-box-2-right .balanced-row {
+        width: 100%;
+        min-width: 0;
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    .left-nav .info-box-2-right .balanced-row img {
+        flex: var(--ar, 1) 1 0%;
+        width: 0;       /* so the photos' natural widths don't stretch the row; flex sizes them */
+        min-width: 0;
+        display: block;
+        height: auto;
+    }
+    /* posters keep their own proportions: three columns, stacked */
+    .left-nav .info-box-2-right .poster-grid {
+        width: 80%;
+        column-count: 3;
+        column-gap: 12px;
+    }
+    .left-nav .info-box-2-right .poster-grid img.poster {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+        break-inside: avoid;
+    }
+    .left-nav .info-box-2-right img.big {
+        width: calc((100% - 12px) / 2);
+    }
+    /* lead image: 70% of the media column (same as single images/videos), with a grid of smaller pages (3 across) beneath it */
+    .left-nav .info-box-2-right img.hero {
+        width: 70%;
+    }
+    .left-nav .info-box-2-right img.page {
+        width: calc((100% - 24px) / 3);
+    }
+    /* a single wide image (sketches, screenshots) matches the 70% video width */
+    .left-nav .info-box-2-right img.wide {
+        width: 70%;
+    }
+    /* two images side by side take the same 70% width as a single video */
+    .left-nav .info-box-2-right img.pair {
+        width: calc(35% - 6px);
+    }
+    .left-nav .info-box-2-right img.small {
+        width: calc(25% - 9px); /* four across */
+    }
+}
+
+/* project pages: trial dark theme (to go back, swap this block for: body.left-nav { background-color: #f2f2f2; }) */
+:root:has(body.left-nav) {
+    --bg: #000000;
+    --fg: #ececec;
+    --border: #4a4a4a;
+    --box-fill: rgba(0, 0, 0, 0.5);
+}
+
+/* letters swap to Yarndings on hover (scripts/glyphswap.js; index and work pages).
+   The real letter stays in the text flow (just invisible) and the glyph is drawn over it,
+   so nothing around it can move. */
+.glyph-swap {
+    position: relative;
+    color: transparent;
+}
+
+.glyph-swap::after {
+    content: attr(data-char);
+    position: absolute;
+    top: 0.15em; /* nudge the glyph down to sit on the text baseline */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Yarndings", "Zapf Dingbats", sans-serif;
+    color: var(--accent);
+    opacity: 0.75;
+    transform: scale(var(--glyph-scale, 1.6)); /* randomized per letter by glyphswap.js */
+    transform-origin: center 60%;
+    animation: glyph-pop 0.1s ease-out;
+}
+
+/* on the way out: the glyph shrinks and fades while the real letter fades back in */
+.glyph-swap.leaving {
+    color: inherit;
+    transition: color 0.3s ease-in;
+}
+
+.glyph-swap.leaving::after {
+    animation: glyph-leave 0.3s ease-in forwards;
+}
+
+@keyframes glyph-leave {
+    to {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+}
+
+/* the span is inserted already swapped, so a transition has no start state; animate from normal size instead */
+@keyframes glyph-pop {
+    from {
+        transform: scale(1);
+    }
+}
+
+/* archive page: same dark theme as the profile page */
+:root:has(body.archive-page) {
+    --bg: #000000;
+    --fg: #ececec;
+    --border: #4a4a4a;
+    --box-fill: #000000;
+}

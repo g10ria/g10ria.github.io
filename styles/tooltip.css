@@ -1,0 +1,40 @@
+/* tooltip that follows the mouse over an image (scripts/tooltip.js; used on the archive and My Work pages) */
+.archive-tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    max-width: 280px;
+    padding: 10px 12px;
+    background-color: #000;
+    border: 1px solid var(--border);
+    color: #ececec;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s ease-out;
+}
+
+.archive-tooltip.visible {
+    opacity: 1;
+}
+
+.archive-tooltip-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+    font-size: 12pt;
+}
+
+.archive-tooltip-count {
+    flex: none;
+    font-size: 9pt;
+    opacity: 0.6;
+}
+
+.archive-tooltip-desc {
+    margin-top: 6px;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    opacity: 0.8;
+}

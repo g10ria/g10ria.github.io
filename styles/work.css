@@ -1,6 +1,6 @@
 .description-box {
     margin-bottom: 50px;
-    border: 1px solid blue;
+    border: 1px solid var(--accent);
     padding: 10px;
 }
 
@@ -28,7 +28,7 @@
 
 hr {
     border: none;
-    border-bottom: 1px dotted blue;
+    border-bottom: 1px dotted var(--accent);
     margin-left: 5px;
     margin-right: 5px;
     flex-grow: 1;
@@ -39,9 +39,9 @@ hr {
     flex-basis: calc(100% / 2 - 30px);
     cursor: pointer;
     box-sizing: border-box;
-    border: 1px dashed rgb(202, 202, 202);
+    border: 1px dashed var(--border);
     padding: 15px;
-    background-color: rgba(255, 255, 255, 200)
+    background-color: transparent
 }
 
 .work-item-full {
@@ -49,9 +49,90 @@ hr {
 }
 
 .work-item:hover {
-    border: 1px solid blue;
+    border: 1px solid var(--accent);
 }
 
 .work-item:active {
-    box-shadow: inset 0 0 0 2px blue;
+    box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+
+/* work page: wide, full-width project rows */
+.work-page .description-box {
+    box-sizing: border-box;
+    max-width: 60vw;
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+    padding: 15px;
+    background-color: var(--box-fill);
+}
+
+.work-page .work-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 24px;
+}
+
+/* each project: image on top, title and details underneath, no card box */
+.work-page .work-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.work-page .work-item:hover,
+.work-page .work-item:active {
+    border: none;
+    box-shadow: none;
+}
+
+.work-page .work-item br {
+    display: none;
+}
+
+.work-page .work-item .work-image {
+    order: -1;
+    margin-bottom: 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.work-page .work-item:hover .work-title {
+    color: var(--accent);
+}
+
+@media (max-width: 767px) {
+    .work-page .description-box {
+        max-width: none;
+    }
+    .work-page .work-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* work page: trial dark theme (delete this block to go back to white) */
+body.work-page {
+    background-color: #000;
+    color: #ececec;
+}
+
+.work-page .dark-blue {
+    color: var(--accent);
+}
+
+/* slightly darkened cover (a filter, so it works on a white or black page alike) */
+.work-image-dim {
+    filter: brightness(0.85);
+}
+
+/* a card that only shows a tooltip (no project page): it should not look clickable */
+.work-page .work-item.tooltip-only,
+.work-page .work-item.tooltip-only:hover .work-title {
+    cursor: default;
+}
+
+.work-page .work-item.tooltip-only:hover .work-title {
+    color: inherit;
 }

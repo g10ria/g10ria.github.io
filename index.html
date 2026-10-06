@@ -8,21 +8,33 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/tooltip.css">
 
     <script src="scripts/navbounce.js"></script>
+    <script src="scripts/cursor.js"></script>
+    <script src="scripts/glyphswap.js"></script>
+    <script src="scripts/blossom.js"></script>
+    <script src="scripts/togglebox.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/tooltip.js"></script>
 
     <script src="scripts/p5.min.js"></script>
     <script src="scripts/draw.js"></script>
 
     <link rel="icon" href="/styles/asterisk.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="profile-page">
     <div class="content">
-        <div class="navbox">
+        <div class="navbox swap-yarndings">
             <span class="navoption"><a href="./index.html">ABOUT ME</a> <span class="yarndings blue navlabel">9</span></span>
             <span class="navoption">
-                <a href="./work.html">DESIGN PORTFOLIO</a>
+                <a href="./work.html">MY WORK</a>
             </span>
             <span class="navoption">
                 <a href="./archive.html">ARCHIVE</a>
@@ -33,16 +45,24 @@
         </div>
 
         
+        <h1 class="nametag">Gloria Zhu</h1>
 
-        <div class="info-box">
-            <img src="./img/IMG_4160 - Copy.JPG" alt="Gloria Zhu profile picture" class="profile-pic">
+        <div class="info-box swap-yarndings">
+            <img src="./img/profile-800.jpg" alt="Gloria Zhu profile picture" class="profile-pic">
             <div class="text-box">
-                <h1>Gloria Zhu</h1>
-                <p>Hi! I'm a Masters student at MIT ('27) studying <span class="blue">computer science</span>. I recently graduated 
+                <p><span class="lead">I’m an <span class="blue">engineer and designer</span> who loves to make things.</span> Currently, I’m a graduate student at MIT ('27), 
+                    researching human-AI interaction at the 
+                    <a href="https://designintelligence.mit.edu/" target="_blank"><span class="underline">Design Intelligence Lab</span></a>.
+                    
+                    <br><br>
+                    I completed my undergrad at MIT in spring 2026 with a dual B.S. in Computer Science and Art & Design, 
+                    and a minor in Media Studies.
+
+                    <!-- Hi! I'm a Masters student at MIT ('27) studying <span class="blue">computer science</span>. I recently graduated 
                     from my undergrad at the 'tute, during which I studied <span class="blue">design</span> alongside CS and read a bunch of books about media theory.
                     <br><br>
                     I believe technology should work <span class="italic">for</span> us, and I want to use my technical and creative background to 
-                    <span class="blue">make things for and with other people</span>.
+                    <span class="blue">make things for and with other people</span>. -->
                     <!-- <br><br>
                     This summer, I'm working on <span class="blue">data visualization for public health</span> at 
                     <a href="https://www.fathom.info/about/" target="_blank"><span class="underline">Fathom</span></a>.
@@ -59,21 +79,26 @@
 
                 <div class="icons-box">
                     <a href="https://github.com/g10ria" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
                     </a>
                     <a href="https://www.linkedin.com/in/gloria-zhu-78a079155/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
                     </a>
                     <a href="mailto:gloriazh@mit.edu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" /><path d="M3 6l9 6l9 -6" /><path d="M15 18h6" /><path d="M18 15l3 3l-3 3" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" /><path d="M3 6l9 6l9 -6" /><path d="M15 18h6" /><path d="M18 15l3 3l-3 3" /></svg>
                     </a>
                 </div>
                 <br>
 
-                <p class="caption italic">
-                    When I'm not at my laptop or in a makerspace, I can be found drawing, writing, or playing indie video games!
+                <p>
+                    <!-- <span class="blue">Education:</span> -->
+                    <!-- <br> -->
+                    I am interested in beautiful design and rigorous engineering and their intersections. 
+                    And, working with passionate, open-minded people!
                     <!-- When I'm not in a makerspace<span class="blue">*</span> or studio, I can be found drawing or playing indie video games. -->
                 </p>
+
+                <button class="toggle-btn" data-target="#more-box" aria-expanded="true" aria-label="Toggle more info">&minus;</button>
 
                 <!-- <p class="caption profile-caption"><-- <span class="blue">*</span> My profile at the makerspace I volunteer at!</p> -->
             </div>
@@ -83,13 +108,12 @@
 
         <br>
         <br>
-        <hr>
-        <br>
+        <!-- <hr> -->
+        <!-- <br> -->
 
-        <div class="info-box-2 caption">
-            <p class="info-box-2-left">Experience & Involvements:</p>
+        <!-- <div class="info-box-2 caption">
+            <p class="info-box-2-left leftlabel">Previously, I've interned at:</p>
             <p class="info-box-2-right">
-                Previously, I've interned at:
                 <br>
                 <span class="blue yarndings">k</span> <span class="company-link blue"><a href="https://www.fathom.info/" target="_blank">Fathom</a></span>, making tools for disease tracking and prevention
                 <br>
@@ -105,7 +129,7 @@
                 and Arts@MIT.
                 <br><br>
             </p>
-            <!-- <p class="info-box-2-left">Selected Coursework:</p>
+            <p class="info-box-2-left">Selected Coursework:</p>
             <p class="info-box-2-right">
                 <span class="blue">Computing:</span> Distributed Systems, Computer Language Engineering, Computation Structures, Interactive Data Visualization, Design and Analysis of Circuits, Robotics: Science and Systems, Machine Learning, Advances in Computer Vision
                 <br>
@@ -123,13 +147,26 @@
                 <span class="blue">Design Tools:</span> Figma, Adobe Creative Suite, Rhino, TouchDesigner
                 <br>
                 <span class="blue">Engineering Tools:</span> Arduino, Onshape CAD, KiCAD, MATLAB
-            </p> -->
+            </p>
+        </div> -->
+
+        <div class="offset-box swap-yarndings" id="more-box">
+            <p>Previously, I interned at Fathom Design, Databricks, Formlabs, and Zoox (Amazon Self-Driving),  
+                in software and design engineering roles. I am most interested in fast-paced roles combining technical, creative, 
+            and user-centered work - particularly creative technology, product design/management, and product/design engineering. </p>
         </div>
 
         <div class="footer">
 
         </div>
 
+    </div>
+
+    <div class="corner-gallery" data-tooltip="textures from yellowstone :)" data-tooltip-hide-on-buttons>
+        <button class="gallery-btn gallery-prev" aria-label="Previous photo">&larr;</button>
+        <img src="./img/yellowstone/img_3177.jpg" alt="Yellowstone landscape" class="corner-photo">
+        <img alt="" aria-hidden="true" class="corner-photo is-hidden">
+        <button class="gallery-btn gallery-next" aria-label="Next photo">&rarr;</button>
     </div>
 </body>
 </html>

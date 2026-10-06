@@ -8,301 +8,451 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/nav.css">
-    <link rel="stylesheet" href="styles/profile.css">
-    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/projectpage.css">
+    <link rel="stylesheet" href="styles/archive.css">
+    <link rel="stylesheet" href="styles/tooltip.css">
 
-    <script src="scripts/linkattach.js"></script>
     <script src="scripts/navbounce.js"></script>
+    <script src="scripts/cursor.js"></script>
+    <script src="scripts/glyphswap.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/tooltip.js"></script>
+    <script src="scripts/lightbox.js"></script>
 
     <link rel="icon" href="/styles/asterisk.svg" type="image/x-icon">
 </head>
-<body>
+<body class="archive-page">
     <div class="content">
-        <div class="navbox">
+        <div class="navbox swap-yarndings">
             <span class="navoption"><a href="/index.html">ABOUT ME</a></span>
             <span class="navoption">
-                <a href="/work.html">DESIGN PORTFOLIO</a> 
+                <a href="/work.html">MY WORK</a>
             </span>
             <span class="navoption">
                 <a href="/archive.html">ARCHIVE</a> <span class="yarndings blue navlabel">=</span>
             </span>
-            <!-- <span class="navoption">
-                <a href="https://drive.google.com/file/d/1vgUbS3lRCb_66e2iQbxGmneiT8oTJkuU/view?usp=sharing" target="_blank">CV</a>
-            </span> -->
         </div>
 
-        <div class="description-box">
-            <p>
-                This page contains a bunch of my personal and class projects across design, robotics, and art. :-)
-            </p>
-            <!-- <p class="italic caption">
-                Note: I'm working on writing up dedicated pages for some of these projects, but for now they just live here.
-            </p> -->
+        <!-- intro text hidden for now
+        <p class="arch-intro caption">
+            A bunch of my personal and class projects across design, robotics, and art. :-)
+        </p>
+        -->
+
+        <h2 class="archive-heading">Graphic Design</h2>
+        <div class="archive-grid">
+            <figure class="slideshow-card slideshow-sticker">
+                <div class="slideshow" aria-label="MIT Architecture &amp; Design stickers">
+                    <img class="slide active" src="./img/stickers/sticker-2.png" alt="MIT Architecture &amp; Design sticker" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/stickers/sticker-1.png" alt="MIT Architecture &amp; Design sticker" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">MIT Architecture &amp; Design Stickers</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="MIT Quilt Show Poster">
+                    <img class="slide active" src="./img/quilt/quilt-show-poster.jpg" alt="MIT Quilt Show poster, coming fall 2026" style="object-position: 50% 50%" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">MIT Quilt Show Poster</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card" data-description="Pill-shaped calendar inspired by the design language of fruit stickers.">
+                <div class="slideshow" aria-label="Fruit Sticker Calendar images">
+                    <img class="slide active" src="./img/fruit-calendar/composite.jpg" alt="Fruit Sticker Calendar stickers arranged in a pattern" loading="lazy" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-01.jpg" alt="Fruit Sticker Calendar: 2026 Organic Calendar cover" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-02.jpg" alt="Fruit Sticker Calendar: January" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-03.jpg" alt="Fruit Sticker Calendar: February" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-04.jpg" alt="Fruit Sticker Calendar: March" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-05.jpg" alt="Fruit Sticker Calendar: April" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-06.jpg" alt="Fruit Sticker Calendar: May" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-07.jpg" alt="Fruit Sticker Calendar: June" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-08.jpg" alt="Fruit Sticker Calendar: July" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-09.jpg" alt="Fruit Sticker Calendar: August" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-10.jpg" alt="Fruit Sticker Calendar: September" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-11.jpg" alt="Fruit Sticker Calendar: October" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-12.jpg" alt="Fruit Sticker Calendar: November" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/fruit-calendar/sticker-13.jpg" alt="Fruit Sticker Calendar: December" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Fruit Sticker Calendar</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="LSC Movie Posters images">
+                    <img class="slide active" src="./img/posters/lsc-godfather.jpg" alt="LSC poster for The Godfather" style="object-position: center 20%" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/posters/lsc-inception.jpg" alt="LSC poster for Inception" style="object-position: center 20%" decoding="async">
+                    <img class="slide" data-src="./img/posters/lsc-nausicaa.jpg" alt="LSC poster for Nausicaa of the Valley of the Wind" style="object-position: center 20%" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">LSC Movie Posters</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Movie/Music Posters images">
+                    <img class="slide active" src="./img/posters/gru.jpg" alt="The Rise of Gru poster graphic" style="object-position: center 20%" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/posters/moon.jpg" alt="I Wanna Go to the Moon poster graphic" style="object-position: center 20%" decoding="async">
+                    <img class="slide" data-src="./img/posters/stationary.jpg" alt="Stationary poster graphic" style="object-position: center 20%" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Movie/Music Posters</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Maseeh Floor 3 Shirt">
+                    <img class="slide active" src="./img/dorm-graphics/maseeh-floor-3.jpg" alt="Maseeh Hall floor 3 t-shirt graphic" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Maseeh Floor 3 Shirt</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Burton Two Toucans Sticker">
+                    <img class="slide active" src="./img/dorm-graphics/burton-two-toucans.jpg" alt="Burton Two toucan sticker illustration" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Burton Two Toucans Sticker</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Burton Conner CPW 2023 T-shirt">
+                    <img class="slide active" src="./img/dorm-graphics/burton-conner-cpw.jpg" alt="Burton Conner CPW 2023 graphic" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Burton Conner CPW 2023 T-shirt</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card" data-description="Radial unfolding book about the history of land use law in the US. Made for 11.067 Land Use Law and Politics.">
+                <div class="slideshow" aria-label="This Land Was Made For You and Me images">
+                    <img class="slide active" src="./img/radial-book/radial-book-1.jpg"  alt="This Land Was Made For You and Me" decoding="async">
+                    <img class="slide" data-src="./img/radial-book/radial-book-2.jpg" alt="This Land Was Made For You and Me" decoding="async">
+                    <img class="slide" data-src="./img/radial-book/radial-book-3.jpg" alt="This Land Was Made For You and Me" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">This Land Was Made For You and Me</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
         </div>
 
-        <!-- <div class="blue italic">
-            Robotics/Programming Projects:
-        </div> -->
-        <!-- <br> -->
-        <!-- <div class="caption">
-            I entered college coming from a primarily mechanical engineering background, and I've always loved tinkering with electronics and experimenting with mechanical systems.
-        </div> -->
-
-        <br>
-
-        <div class="archive-box">
-
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">Thermal Camera</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Class Project (made for 4.031 - Objects and Interaction)</span>
-                    <hr>
-                    <span class="archive-detail">Fall 2024</span>
+        <h2 class="archive-heading">Textiles</h2>
+        <div class="archive-grid">
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Quilted Swan Potholders images">
+                    <img class="slide active" src="./img/swan-potholders/swan-potholders-1.jpg" alt="Four quilted swan potholders laid flat" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/swan-potholders/swan-potholders-2.jpg" alt="Four quilted swan potholders fanned out" decoding="async">
+                    <img class="slide" data-src="./img/swan-potholders/swan-potholders-3.jpg" alt="Close-up of quilted swan potholders" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <div class="caption dark-blue">
-                    Arduino [C++], Electronics [Thermal printing, Physical UI], CAD, 3D Printing, Sheet Metal Bending
+                <figcaption class="slide-title"><span class="slide-name">Quilted Swan Potholders</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Quilted Lamp">
+                    <img class="slide active" src="./img/quilt/quilted-lamp.jpg" alt="A quilted lamp glowing in a dark room" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        In collaboration with my teammate Teresa, we designed, tested, and manufactured this handheld instant camera that adds an element of gamification to the process of taking a photo.
-                        <br><br>
-                        When taking a photo, the user plays a short LED-button-matching game. Their final score determines the clarity of their photograph, which is printed out onto thermal paper for them to tear off and take away as a memento.
-                        <br><br>
-                        Links:
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=hvIzN8XrWyQ" target="_blank"><span class="underline">Demo Video</span></a>
-                        <br>
-                        <a href="https://docs.google.com/presentation/d/1sbfvPfXunLsSH4NDv0V0W8U4NX4jaILSYyNPD-hDg7Y/edit?usp=sharing" target="_blank"><span class="underline">Project Presentation</span></a>
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/thermal1.png" class="archive-image">
-                        <img src="./img/thermal2.jpg" class="archive-image">
-                    </div>
+                <figcaption class="slide-title"><span class="slide-name">Quilted Lamp</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card" data-description="A life-size sewn and stuffed body, photographed to feel eerily intimate and taut.">
+                <div class="slideshow" aria-label="Clay Bodies images">
+                    <img class="slide active" src="./img/sabine1.JPG" alt="Clay Bodies" style="object-position: 68% 35%" decoding="async">
+                    <img class="slide" data-src="./img/sabine2.JPG" alt="Clay Bodies" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
+                <figcaption class="slide-title"><span class="slide-name">Clay Bodies</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">Clay Bodies</div>
+                <div class="arch-details caption">Independent Project &middot; Fall 2024</div>
+                <div class="arch-tags caption">SEWING, QUILTING, PHOTOGRAPHY</div>
+                <p class="caption">I led this project in junior year, seeking to examine the ways we interact with and internalize our physical bodies. By sewing and stuffing a life-size facsimile of a human body, I wanted to create a sense of eerie intimacy and tautness through photography.</p>
+                <p class="caption">Team: Michelle, Fernando, Sabine, Arielsie, Emily, Anna, Ernesto</p>
             </div>
+                -->
+            </figure>
 
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">Calligraphy Robot</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Project</span>
-                    <hr>
-                    <span class="archive-detail">Spring 2024</span>
+            <!-- Cyanotype Tote (hidden for now)
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Cyanotype Tote">
+                    <img class="slide active" src="./img/tote-bag.jpg" alt="Cyanotype tote bag printed with 'is this it? this is it!'" style="object-position: center 60%" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <div class="caption dark-blue">
-                    Arduino [C++], Electronics [Motor control, Physical UI], CAD, 3D Printing, Path Planning [Python]
-                </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        I made this robot with my classmate Lee! Essentially, we built a standard 3-axis pen plotter (X/Y/Z) and then added 
-                        2 rotational degrees of freedom (pitch/yaw), allowing the robot to "draw" with and tilt a brush pen to create variable-width calligraphic strokes.
-                        <br><br>
-                        Links:
-                        <br>
-                        <a href="https://www.technologyreview.com/2025/02/14/1111224/calligraphy-bot/" target="_blank"><span class="underline">MIT Technology Review Article</span></a>
-                        <br><br>
-                        <a href="https://github.com/g10ria/scribebot" target="_blank"><span class="underline">Source Code</span></a>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=_LLspTuF1IU" target="_blank"><span class="underline">Demo Clip</span></a>
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/scribebot1.jpg" class="archive-image">
-                        <img src="./img/scribebot2.jpg" class="archive-image">
-                    </div>
-                </div>
-            </div>
-
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">Chess Robot (aka "Magnets" Carlsen)</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Project</span>
-                    <hr>
-                    <span class="archive-detail">Spring 2023</span>
-                </div>
-                <div class="caption dark-blue">
-                    Arduino [C++], Electronics, CAD
-                </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        I primarily helped out with CAD and mechanical design for this project, which I worked on with classmates Eric, Claudius, and Keiji. 
-                        With the power of electromagnets, a thin carbon-fiber gameboard, a CoreXY gantry, and the Stockfish chess engine, this robot beats just about anyone at Chess!
-                        <br><br>
-                        Links:
-                        <br>
-                        <a href="https://kogappa.com/projects/mags/" target="_blank"><span class="underline">Keiji's (much more detailed) blog post</span></a>
-                        <br>
-                        <a href="https://design.mit.edu/news/mags-the-chess-playing-robot" target="_blank"><span class="underline">MIT Design Article</span></a>
-                        <br>
-                        <a href="https://www.youtube.com/watch?v=14NL_39Ftnc" target="_blank"><span class="underline">Demo Video</span></a>
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/mags.png" class="archive-image">
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="archive-item archive-item-full">
-                <div class="archive-title">Miscellaneous Websites</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Projects</span>
-                    <hr>
-                    <span class="archive-detail">2020-2022</span>
-                </div>
-                <div class="caption dark-blue">
-                    Javascript/HTML/CSS, Handlebars
-                </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        These are some websites I built throughout high school, when I was first introduced to web development :)
-                        <br><br>
-                        <a href="https://dev.harker.org/" target="_blank"><span class="underline">Software Development Club Website</span></a>
-                        <br>
-                        <a href="https://g10ria.github.io/HarkerArtClub-website/" target="_blank"><span class="underline">Art Club Website</span></a>
-                        <br>
-                        <a href="https://g10ria.github.io/Scoresheet/" target="_blank"><span class="underline">Digital Volleyball Scoresheet</span></a>
-                        <br>
-                        <a href="https://github.com/g10ria/Harker-Spirit" target="_blank"><span class="underline">School Spirit Dashboard</span></a>
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/scoresheet.png" class="archive-image">
-                    </div>
-                </div>
-            </div> -->
-
+                <figcaption class="slide-title"><span class="slide-name">Cyanotype Tote</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+            -->
         </div>
 
-        <br><br>
-
-        <!-- <div class="blue italic">
-            Conceptual Art Projects:
-        </div> -->
-        <!-- <br>
-        <div class="caption">
-            I love contemporary art, particularly new media/ technological art and work that deals with themes of multiplicity, mass culture, and media theory.
-        </div> -->
-
-        <br>
-
-        <div class="archive-box">
-
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">Forecaster</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Project</span>
-                    <hr>
-                    <span class="archive-detail">Fall 2025</span>
+        <h2 class="archive-heading">Hardware, Wearables, Etc.</h2>
+        <div class="archive-grid">
+            <figure class="slideshow-card" data-description="A wall-mounted bot that rewrites a daily “good morning” forecast with random adjectives scraped from the web.">
+                <div class="slideshow" aria-label="Forecaster images">
+                    <img class="slide active" src="./img/forecast1.jpg" alt="Forecaster" decoding="async">
+                    <img class="slide" data-src="./img/forecast2.jpg" alt="Forecaster" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <div class="caption dark-blue">
-                    Raspberry Pi, Electronics
+                <figcaption class="slide-title"><span class="slide-name">Forecaster</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">Forecaster</div>
+                <div class="arch-details caption">Independent Project &middot; Fall 2025</div>
+                <div class="arch-tags caption">RASPBERRY PI, ELECTRONICS</div>
+                <p class="caption">Parodying predictive technologies such as horoscopes, this project seeks to examine how we do (or don't) allow automated technologies to dictate the ways we perceive reality. Every minute, this bot scrapes three random adjectives from the internet and rotates it into its "good morning" copy text.</p>
+            </div>
+                -->
+            </figure>
+
+            <figure class="slideshow-card" data-description="A handheld instant camera where an LED matching game decides how clear your photo prints. Made with Teresa Jiang for 4.031 Design of Objects and Interaction.">
+                <div class="slideshow" aria-label="Thermal Camera images">
+                    <img class="slide active" src="./img/thermal1.png" alt="Thermal Camera" decoding="async">
+                    <img class="slide" data-src="./img/thermal2.jpg" alt="Thermal Camera" decoding="async">
+                    <video class="slide slide-contain" data-src="./img/thermal-interactiongrid.mp4" poster="./img/thermal-interactiongrid.jpg" aria-label="Thermal Camera interaction grid" muted loop playsinline preload="none"></video>
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        Parodying predictive technologies such as horoscopes, this project seeks to examine how we do (or don't) allow automated technologies to dictate the ways we perceive reality.
-                        Every minute, this bot scrapes three random adjectives from the internet and rotates it into its "good morning" copy text. 
-                        <!-- <br><br> -->
-                        <!-- I installed it in our apartment's shared living room over a period of one month and collected my roommates' responses to the object. -->
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/forecast1.jpg" class="archive-image">
-                        <img src="./img/forecast2.jpg" class="archive-image">
-                    </div>
+                <figcaption class="slide-title"><span class="slide-name">Thermal Camera</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">Thermal Camera</div>
+                <div class="arch-details caption">Class Project (made for 4.031 - Objects and Interaction) &middot; Fall 2024</div>
+                <div class="arch-tags caption">ARDUINO [C++], ELECTRONICS [THERMAL PRINTING, PHYSICAL UI], CAD, 3D PRINTING, SHEET METAL BENDING</div>
+                <p class="caption">In collaboration with my teammate Teresa, we designed, tested, and manufactured this handheld instant camera that adds an element of gamification to the process of taking a photo.</p>
+                <p class="caption">When taking a photo, the user plays a short LED-button-matching game. Their final score determines the clarity of their photograph, which is printed out onto thermal paper for them to tear off and take away as a memento.</p>
+                <div class="arch-links">
+                    <a href="https://www.youtube.com/watch?v=hvIzN8XrWyQ" target="_blank" class="link-btn">Demo Video &#8599;</a>
+                    <a href="https://docs.google.com/presentation/d/1sbfvPfXunLsSH4NDv0V0W8U4NX4jaILSYyNPD-hDg7Y/edit?usp=sharing" target="_blank" class="link-btn">Project Presentation &#8599;</a>
                 </div>
             </div>
+                -->
+            </figure>
 
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">sixty sixty one</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Project</span>
-                    <hr>
-                    <span class="archive-detail">Fall 2023</span>
+            <figure class="slideshow-card" data-description="A chess-playing robot that moves pieces with electromagnets under a thin carbon-fiber board.">
+                <div class="slideshow" aria-label="Chess Robot (aka &quot;Magnets&quot; Carlsen) images">
+                    <img class="slide active" src="./img/mags.png" alt="Chess Robot (aka &quot;Magnets&quot; Carlsen)" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <div class="caption dark-blue">
-                    Laser Cutting, Sheet Metal Bending, Photography, Editorial Design
-                </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        I led this project in sophomore year, overseeing creative direction and fabrication. 
-                        Using bent sheet aluminum (alloy 6061!), we created and photographed metal garments inspired by forms and tensions drawn from nature.
-                        <br><br>
-                        Team: Teresa, Lindsay, Lee, Fernando, Anna, Sabine, Bukunmi, Joanna, Michelle
-                        <br><br>
-                        Links:
-                        <br>
-                        <a href="https://mad.mit.edu/news/sixty-sixty-one-from-aluminum-alloy-to-wearables" target="_blank"><span class="underline">MIT Design Article</span></a>
-                        <br>
-                        <a href="https://www.instagram.com/p/C7O8F2zAslH/?img_index=1" target="_blank"><span class="underline">Post on @mit Instagram</span></a>
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/60613.jpg" class="archive-image">
-                        <img src="./img/6061mannequin.jpg" class="archive-image">
-                        <img src="./img/6061headpiece.jpg" class="archive-image">
-                    </div>
+                <figcaption class="slide-title"><span class="slide-name">Chess Robot</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">Chess Robot (aka "Magnets" Carlsen)</div>
+                <div class="arch-details caption">Independent Project &middot; Spring 2023</div>
+                <div class="arch-tags caption">ARDUINO [C++], ELECTRONICS, CAD</div>
+                <p class="caption">I primarily helped out with CAD and mechanical design for this project, which I worked on with classmates Eric, Claudius, and Keiji. With the power of electromagnets, a thin carbon-fiber gameboard, a CoreXY gantry, and the Stockfish chess engine, this robot beats just about anyone at Chess!</p>
+                <div class="arch-links">
+                    <a href="https://kogappa.com/projects/mags/" target="_blank" class="link-btn">Keiji's (much more detailed) blog post &#8599;</a>
+                    <a href="https://design.mit.edu/news/mags-the-chess-playing-robot" target="_blank" class="link-btn">MIT Design Article &#8599;</a>
+                    <a href="https://www.youtube.com/watch?v=14NL_39Ftnc" target="_blank" class="link-btn">Demo Video &#8599;</a>
                 </div>
             </div>
+                -->
+            </figure>
 
-            <div class="archive-item archive-item-full">
-                <div class="archive-title">Clay Bodies</div>
-                <div class="archive-details caption">
-                    <span class="archive-detail">Independent Project</span>
-                    <hr>
-                    <span class="archive-detail">Fall 2024</span>
+            <figure class="slideshow-card" data-description="A five-axis pen plotter that tilts a brush pen to draw variable-width calligraphic strokes.">
+                <div class="slideshow" aria-label="Calligraphy Robot images">
+                    <img class="slide active" src="./img/scribebot1.jpg" alt="Calligraphy Robot" decoding="async">
+                    <img class="slide" data-src="./img/scribebot2.jpg" alt="Calligraphy Robot" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
                 </div>
-                <div class="caption dark-blue">
-                    Sewing, Quilting, Photography
-                </div>
-                <br>
-                <div class="info-box">
-                    <div class="caption">
-                        I led this project in junior year, seeking to examine the ways we interact with and internalize our physical bodies. By sewing and stuffing a life-size 
-                        facsimile of a human body, I wanted to create a sense of eerie intimacy and tautness through photography.
-                        <br><br>
-                        Team: Michelle, Fernando, Sabine, Arielsie, Emily, Anna, Ernesto
-                    </div>
-                    <div class="archive-image-box">
-                        <img src="./img/sabine1.JPG" class="archive-image">
-                        <img src="./img/sabine2.JPG" class="archive-image">
-                    </div>
+                <figcaption class="slide-title"><span class="slide-name">Calligraphy Robot</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">Calligraphy Robot</div>
+                <div class="arch-details caption">Independent Project &middot; Spring 2024</div>
+                <div class="arch-tags caption">ARDUINO [C++], ELECTRONICS [MOTOR CONTROL, PHYSICAL UI], CAD, 3D PRINTING, PATH PLANNING [PYTHON]</div>
+                <p class="caption">I made this robot with my classmate Lee! Essentially, we built a standard 3-axis pen plotter (X/Y/Z) and then added 2 rotational degrees of freedom (pitch/yaw), allowing the robot to "draw" with and tilt a brush pen to create variable-width calligraphic strokes.</p>
+                <div class="arch-links">
+                    <a href="https://www.technologyreview.com/2025/02/14/1111224/calligraphy-bot/" target="_blank" class="link-btn">MIT Technology Review Article &#8599;</a>
+                    <a href="https://github.com/g10ria/scribebot" target="_blank" class="link-btn">Source Code &#8599;</a>
+                    <a href="https://www.youtube.com/watch?v=_LLspTuF1IU" target="_blank" class="link-btn">Demo Clip &#8599;</a>
                 </div>
             </div>
+                -->
+            </figure>
+
+            <figure class="slideshow-card" data-description="A long-exposure cyanotype camera inspired by the design of camping thermoses. Made with Teresa Jiang for 4.031 Design of Objects and Interaction.">
+                <div class="slideshow" aria-label="Portable Cyanotype Camera images">
+                    <img class="slide active" src="./img/campera/campera-1.jpg" alt="Hands adjusting the Campera, a portable cyanotype camera" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/campera/campera-2.jpg" alt="Three Campera cameras" decoding="async">
+                    <img class="slide" data-src="./img/campera/campera-3.jpg" alt="The Campera opened, with a disc being loaded" decoding="async">
+                    <img class="slide slide-contain" data-src="./img/campera/campera-4.jpg" alt="The Campera's mail-label packaging" decoding="async">
+                    <img class="slide" data-src="./img/campera/campera-5.jpg" alt="A lens disc held in a hand" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Portable Cyanotype Camera</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card" data-description="Metal garments made from bent 6061 aluminum.">
+                <div class="slideshow" aria-label="sixty sixty one images">
+                    <img class="slide active" src="./img/6061headpiece.jpg" alt="sixty sixty one" decoding="async">
+                    <img class="slide" data-src="./img/60613.jpg" alt="sixty sixty one" decoding="async">
+                    <img class="slide" data-src="./img/6061mannequin.jpg" alt="sixty sixty one" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Sixty Sixty One</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+                <!-- text hidden for now
+            <div class="arch-text">
+                <div class="arch-title">sixty sixty one</div>
+                <div class="arch-details caption">Independent Project &middot; Fall 2023</div>
+                <div class="arch-tags caption">LASER CUTTING, SHEET METAL BENDING, PHOTOGRAPHY, EDITORIAL DESIGN</div>
+                <p class="caption">I led this project in sophomore year, overseeing creative direction and fabrication. Using bent sheet aluminum (alloy 6061!), we created and photographed metal garments inspired by forms and tensions drawn from nature.</p>
+                <p class="caption">Team: Teresa, Lindsay, Lee, Fernando, Anna, Sabine, Bukunmi, Joanna, Michelle</p>
+                <div class="arch-links">
+                    <a href="https://mad.mit.edu/news/sixty-sixty-one-from-aluminum-alloy-to-wearables" target="_blank" class="link-btn">MIT Design Article &#8599;</a>
+                    <a href="https://www.instagram.com/p/C7O8F2zAslH/?img_index=1" target="_blank" class="link-btn">Post on @mit Instagram &#8599;</a>
+                </div>
+            </div>
+                -->
+            </figure>
+
+            <figure class="slideshow-card">
+                <div class="slideshow" aria-label="Acrylic Keychains">
+                    <img class="slide active" src="./img/dorm-graphics/acrylic-keychains.jpg" alt="A bag of clear acrylic keychains" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Acrylic Keychains</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
         </div>
 
-        <br><br>
+        <h2 class="archive-heading">Illustration</h2>
+        <div class="archive-grid">
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Cable Car">
+                    <img class="slide active" src="./img/illust-web/cable-car.jpg" alt="Cable Car" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Cable Car</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
 
-        <!-- <div class="blue italic">
-            Illustration:
-        </div> -->
-        <!-- <br>
-        <div class="caption">
-            I've been drawing and painting for as long as I can remember! My favorite mediums are gouache paint and black ink, and I especially like to draw plants and fantasy worlds.
-        </div> -->
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Dead Rabbits">
+                    <img class="slide active" src="./img/illust-web/dead-rabbits.jpg" alt="Dead Rabbits" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Dead Rabbits</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
 
-        <div class="description-box">
-            <p>
-                digital & gouache illustrations below, from 2017-present
-            </p>
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Back of a Plant Store">
+                    <img class="slide active" src="./img/illust-web/nyc-plant-store.jpg" alt="Back of a Plant Store" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Back of a Plant Store</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Year of the Rabbit">
+                    <img class="slide active" src="./img/illust-web/year-of-the-rabbit.jpg" alt="Year of the Rabbit" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Year of the Rabbit</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Fish (Gouache)">
+                    <img class="slide active" src="./img/illust-web/fish-gouache.jpg" alt="Fish (Gouache)" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Fish (Gouache)</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Idol">
+                    <img class="slide active" src="./img/illust-web/idol.jpg" alt="Idol" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Idol</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Ribs">
+                    <img class="slide active" src="./img/illust-web/ribs.jpg" alt="Ribs" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Ribs</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Ink Drawing">
+                    <img class="slide active" src="./img/illust-web/ink-drawing.jpg" alt="Ink Drawing" loading="lazy" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Ink Drawing</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <figure class="slideshow-card slideshow-light">
+                <div class="slideshow" aria-label="Untitled">
+                    <img class="slide active" src="./img/illust-web/right.jpg" alt="Untitled" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/illust-web/left.jpg" alt="Untitled" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Illustration - Untitled</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+
+            <!-- unused illustration: ./img/illust/undersea.webp -->
+
+            <!-- hidden tiles not in a category yet -->
+            <!-- Conversations for Beginners (hidden for now)
+            <figure class="slideshow-card" data-description="A book parodying language-learning books for teaching social norms. Made for 4.S00 Bad Translation.">
+                <div class="slideshow" aria-label="Conversations for Beginners images">
+                    <img class="slide active" src="./img/conversations/conversations-1.jpg" alt="Conversations for Beginners book cover" loading="lazy" decoding="async">
+                    <img class="slide" data-src="./img/conversations/conversations-2.jpg" alt="Conversations for Beginners instructions and key pages" decoding="async">
+                    <img class="slide" data-src="./img/conversations/conversations-3.jpg" alt="Conversations for Beginners tabbed pages standing open" decoding="async">
+                    <button class="slide-btn slide-prev" aria-label="Previous image">&larr;</button>
+                    <button class="slide-btn slide-next" aria-label="Next image">&rarr;</button>
+                </div>
+                <figcaption class="slide-title"><span class="slide-name">Conversations for Beginners</span><span class="slide-count caption" aria-hidden="true"></span></figcaption>
+            </figure>
+            -->
+
+            <!-- Miscellaneous Websites card (hidden for now)
+            <article class="arch-item">
+                <div class="arch-text">
+                    <div class="arch-title">Miscellaneous Websites</div>
+                    <div class="arch-details caption">Independent Projects &middot; 2020-2022</div>
+                    <div class="arch-tags caption">JAVASCRIPT/HTML/CSS, HANDLEBARS</div>
+                    <p class="caption">These are some websites I built throughout high school, when I was first introduced to web development :)</p>
+                    <div class="arch-links">
+                        <a href="https://dev.harker.org/" target="_blank" class="link-btn">Software Development Club Website &#8599;</a>
+                        <a href="https://g10ria.github.io/HarkerArtClub-website/" target="_blank" class="link-btn">Art Club Website &#8599;</a>
+                        <a href="https://g10ria.github.io/Scoresheet/" target="_blank" class="link-btn">Digital Volleyball Scoresheet &#8599;</a>
+                        <a href="https://github.com/g10ria/Harker-Spirit" target="_blank" class="link-btn">School Spirit Dashboard &#8599;</a>
+                    </div>
+                </div>
+                <div class="arch-media">
+                    <img src="./img/scoresheet.png" alt="Miscellaneous Websites" loading="lazy" decoding="async">
+                </div>
+            </article>
+            -->
         </div>
-
-        <br>
-
-        <div class="illustration-box">
-            <img src="./img/illust/cable_car.png" class="illustration-item">
-            <img src="./img/illust/deadrabbits.png" class="illustration-item">
-            <img src="./img/illust/fishgouache.jpg" class="illustration-item">
-            <img src="./img/illust/idol.png" class="illustration-item">
-            <img src="./img/illust/Ribs.png" class="illustration-item">
-            <img src="./img/illust/nyc_plant_store.png" class="illustration-item">
-            <img src="./img/illust/inkdrawing.png" class="illustration-item">
-            <img src="./img/illust/yearoftherabbit.png" class="illustration-item">
-            <img src="./img/illust/left.JPG" class="illustration-item">
-            <img src="./img/illust/right.JPG" class="illustration-item">
-            <!-- <img src="./img/illust/undersea.webp" class="illustration-item"> -->
-        </div>
-
     </div>
 </body>
 </html>

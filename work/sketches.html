@@ -11,16 +11,24 @@
     <link rel="stylesheet" href="../styles/work.css">
     <link rel="stylesheet" href="../styles/projectpage.css">
     <link rel="stylesheet" href="../styles/profile.css">
+    <link rel="stylesheet" href="../styles/header.css">
 
     <script src="../scripts/navbounce.js"></script>
+    <script src="../scripts/cursor.js"></script>
+    <script src="../scripts/glyphswap.js"></script>
+    <script src="../scripts/lazyvideo.js"></script>
     <link rel="icon" href="/styles/asterisk.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="left-nav swap-yarndings">
     <div class="content">
         <div class="navbox">
-            <span class="navoption"><a href="/index.html">ABOUT ME</a> </span>
+            <span class="navoption"><a href="/index.html">ABOUT ME</a></span>
             <span class="navoption">
-                <a href="/work.html">DESIGN PORTFOLIO</a> <span class="yarndings blue navlabel">'</span>
+                <a href="/work.html">MY WORK</a> <span class="yarndings blue navlabel">E</span>
             </span>
             <span class="navoption">
                 <a href="/archive.html">ARCHIVE</a>
@@ -30,34 +38,49 @@
             </span> -->
         </div>
 
+        <a href="/work.html" class="back-btn" aria-label="Back to My Work">&larr; back</a>
+
         <!-- <span class="caption italic blue back"><a href="/work.html"><-- back</a></span> -->
         <!-- <br> -->
         <br>
 
-        <h1>Creative Coding Sketches</h1>
-        <div class="work-details caption">
-            <span class="work-detail">Independent Project</span>
-            <hr>
-            <span class="work-detail">Spring 2026</span>
-        </div>
+        <h1 class="script-title">Javascript Sketches</h1>
         <br>
-        <div class="caption dark-blue">
-            Creative Coding
+
+        <div class="project-meta">
+            <div class="meta-box meta-domain">
+                <div class="meta-label caption blue">Discipline</div>
+                <p>Creative Coding</p>
+                <div class="meta-label caption blue meta-label-next">Date</div>
+                <p>Spring 2025</p>
+            </div>
+            <div class="meta-box meta-tools">
+                <div class="meta-label caption blue">Mediums</div>
+                <ul class="meta-list">
+                    <li>p5.js</li>
+                    <li>paper.js</li>
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                </ul>
+            </div>
         </div>
 
         <br>
         <br>
 
-        <div class="info-box" style="justify-content: center">
+        <div class="info-box">
             <!-- <div class="info-box-content-vertical">
                 <img src="../img/calendar/calsketch.jpg" class="small">
             </div> -->
-            <div class="caption">
+            <div class="caption blurb">
+                Building upon seminal works in the history of computational art, I created this series of creative coding explorations to investigate how 
+                developing technologies shape artistic expression. This body of work began as part of Zach Lieberman's class Recreating the past (MAS.S69).
                 <!-- <span class="italic">[Note: this project page is a work in progress, and I'm working on adding more details]</span>
                 <br><br> -->
-                A series of mini creative coding explorations, drawing from and building upon seminal works in the history of computational art. By reimagining their 
+                
+                <!-- A series of mini creative coding explorations, drawing from and building upon seminal works in the history of computational art. By reimagining their 
                 works through the lens of contemporary technologies, I hope to both pay homage to their innovations and investigate how 
-                technology shapes and dictates the limits of artistic expression.
+                technology shapes and dictates the limits of artistic expression. -->
             </div>
         </div>
 
@@ -65,60 +88,61 @@
 
         <div class="info-box-2 caption" style="justify-content: center">
             <div class="info-box-2-left">
-                <span class="blue">Layer Lines</span>, based on the work of Steina and Woody Vasulka
+                [1] <span class="blue">Layer Lines</span>, based on the work of Steina and Woody Vasulka.
                 <br><br>
-                <a href="https://g10ria.github.io/creative-coding-sketches/vasulkas/" target="_blank"><span class="underline">Link</span></a>
+                <a href="https://g10ria.github.io/creative-coding-sketches/vasulkas/" target="_blank" class="link-btn">Link &#8599;</a>
             </div>
             <div class="info-box-2-right">
-                <img src="../img/layerlines.png" class="medsmall">
+                <video class="project-video lazy-video" data-src="../img/sketches-cover.mp4" poster="../img/sketches-cover.jpg" muted loop playsinline preload="none"></video>
             </div>
 
             <div class="info-box-2-left">
-                <span class="blue">Text Rain</span> by Camille Utterback, but I added simple physics and edge detection
+                [2] <span class="blue">Text Storm</span>, after Text Rain by Camille Utterback; I implemented a lightweight physics engine 
+                and edge detection to manipulate the falling letters.
                 <br><br>
-                <a href="https://g10ria.github.io/creative-coding-sketches/camilleutterback/" target="_blank"><span class="underline">Link</span></a>
+                <a href="https://g10ria.github.io/creative-coding-sketches/camilleutterback/" target="_blank" class="link-btn">Link &#8599;</a>
             </div>
             <div class="info-box-2-right">
-                <img src="../img/camille.gif" class="medsmall">
+                <video class="project-video lazy-video" data-src="../img/sketch-textrain.mp4" poster="../img/sketch-textrain.jpg" muted loop playsinline preload="none"></video>
             </div>
 
             <div class="info-box-2-left">
-                A recreation of Kazimir Malevich's painting <span class="blue">Dynamic Suprematism</span> using paper.js, with added interactivity & animations
+                [3] <span class="blue">Dynam1c Supremat1sm</span>, after Dynamic Suprematism by Kazimir Malevich. I was interested in the dissolution of 
+                shape, line, and plane in geometric abstraction painting, and how this could be mirrored with modern SVG manipulation techniques.
                 <br><br>
-                <a href="https://g10ria.github.io/creative-coding-sketches/kazimirmalevich/" target="_blank"><span class="underline">Link</span></a>
+                <a href="https://g10ria.github.io/creative-coding-sketches/kazimirmalevich/" target="_blank" class="link-btn">Link &#8599;</a>
             </div>
-            <div class="info-box-2-right">
-                <img src="../img/kazimir1.png" class="small">
-                <img src="../img/kazimir2.png" class="small">
-                <img src="../img/kazimir3.png" class="small">
-                <img src="../img/kazimir3.png" class="small">
+            <div class="info-box-2-right kazimir-grid">
+                <video class="project-video lazy-video" data-src="../img/sketch-malevich.mp4" poster="../img/sketch-malevich.jpg" muted loop playsinline preload="none"></video>
             </div>
 
-            <div class="info-box-2-left">
-                A <span class="blue">computational typeface</span> based on the design language of Muriel Cooper's MIT Press logo design
-                <br><br>
-                <a href="https://g10ria.github.io/creative-coding-sketches/murielcooper/" target="_blank"><span class="underline">Link</span></a>
-            </div>
-            <div class="info-box-2-right">
-                <img src="../img/muriel.gif" class="medsmall">
-            </div>
-
+            <!-- John Whitney row (hidden for now)
             <div class="info-box-2-left">
                 <span class="blue">2-axis cosine curve</span> generator, based on John Whitney's work
                 <br><br>
-                <a href="https://g10ria.github.io/creative-coding-sketches/johnwhitney/" target="_blank"><span class="underline">Link</span></a>
+                <a href="https://g10ria.github.io/creative-coding-sketches/johnwhitney/" target="_blank" class="link-btn">Link &#8599;</a>
             </div>
             <div class="info-box-2-right">
-                <img src="../img/cosine.gif" class="medsmall">
+                <video class="project-video lazy-video" data-src="../img/sketch-cosine.mp4" poster="../img/sketch-cosine.jpg" muted loop playsinline preload="none"></video>
+            </div>
+            -->
+
+            <div class="info-box-2-left">
+                [4] <span class="blue">Icon-cam</span>, after Ken Knowlton's work. A mapping of the self onto the Google Material Icons library.
+                <br><br>
+                <a href="https://gloriazh.com/creative-coding-sketches/kenknowlton/" target="_blank" class="link-btn">Link &#8599;</a>
+            </div>
+            <div class="info-box-2-right">
+                <video class="project-video lazy-video" data-src="../img/sketch-knowlton.mp4" poster="../img/sketch-knowlton.jpg" muted loop playsinline preload="none"></video>
             </div>
 
         </div>
 
         <br><br>
         
-        <div class="italic">
+        <!-- <div class="italic">
             TO BE ADDED SOON: reimaginings of Anni Albers, Jason Salavon, Ken Knowlton, and Vera Molnar
-        </div>
+        </div> -->
         
         <br>
     </div>

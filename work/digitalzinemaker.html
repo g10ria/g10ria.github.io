@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria Zhu</title>
+
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/work.css">
+    <link rel="stylesheet" href="../styles/projectpage.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+    <link rel="stylesheet" href="../styles/header.css">
+
+    <script src="../scripts/navbounce.js"></script>
+    <script src="../scripts/cursor.js"></script>
+    <script src="../scripts/glyphswap.js"></script>
+    <script src="../scripts/lazyvideo.js"></script>
+    <link rel="icon" href="/styles/asterisk.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="left-nav swap-yarndings">
+    <figure class="corner-zines" aria-label="Examples of zines">
+        <img src="../img/zine/minizines.webp" alt="A collection of small zines" decoding="async">
+        <figcaption class="caption">Examples of zines</figcaption>
+    </figure>
+
+    <div class="content">
+        <div class="navbox">
+            <span class="navoption"><a href="/index.html">ABOUT ME</a></span>
+            <span class="navoption">
+                <a href="/work.html">MY WORK</a> <span class="yarndings blue navlabel">E</span>
+            </span>
+            <span class="navoption">
+                <a href="/archive.html">ARCHIVE</a>
+            </span>
+        </div>
+
+        <a href="/work.html" class="back-btn" aria-label="Back to My Work">&larr; back</a>
+        <br>
+
+        <h1 class="script-title">Digital Zine Maker</h1>
+        <br>
+
+        <div class="project-meta">
+            <div class="meta-box meta-domain">
+                <div class="meta-label caption blue">Discipline</div>
+                <p>UI/UX, Web Design &amp; Development</p>
+                <div class="meta-label caption blue meta-label-next">Date</div>
+                <p>Ongoing</p>
+            </div>
+            <div class="meta-box meta-tools">
+                <div class="meta-label caption blue">Mediums</div>
+                <ul class="meta-list">
+                    <li>p5.js</li>
+                    <li>HTML/CSS/JS</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="info-box">
+            <div class="caption blurb">
+                Inspired by my experiences drawing zines on paper, I'm creating an accessible and simple web-based tool for designing/formatting one-sheet zines.
+                <br><br>
+                <a href="https://gloriazh.com/zinemaker/" target="_blank" class="link-btn">Website &#8599;</a>
+                <a href="https://github.com/g10ria/zinemaker" target="_blank" class="link-btn">Repo &#8599;</a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="info-box-2 caption">
+            <!-- Rows [1] and [2] (hidden for now; the row [1] photo of small zines moved to row [4])
+            <div class="info-box-2-left">
+                [1] Small zines.
+                [full text (hidden for now)
+                [1] I had the idea for this project when I was trying to design and print educational zines for my art history class.
+                I found that the process to go from Adobe Illustrator all the way to printing and cutting was <span class="blue">unnecessarily cumbersome</span>, requiring knowledge of color modes, bleed, swatches, etc.
+                <br><br>
+                <span class="italic">Zines are small, usually hand-made books made to share art and writing on just about any topic.</span>
+                ]
+            </div>
+            <div class="info-box-2-right">
+            </div>
+
+            <div class="info-box-2-left">
+                [2] A zine I printed and assembled by hand.
+                [full text (hidden for now)
+                [2] For example, for this zine I created in sophomore year, I had to go through several rounds of test prints and printer registration after the actual graphic design
+                before actually being able to print and assemble it.
+                Thus, I wanted to create an <span class="blue">online tool</span> that anyone could use to <span class="blue">easily design and export zine print files</span>.
+                ]
+            </div>
+            <div class="info-box-2-right">
+                <img src="../img/zine/programs-2-web.jpg" class="pair" alt="A printed zine, folded and unfolded" loading="lazy" decoding="async">
+            </div>
+            -->
+        </div>
+
+        <br><br>
+
+        <!-- Key Design Consideration box (hidden for now)
+        <div class="prompt-box caption">
+            <span class="blue">Key Design Consideration:</span> How can I keep the interface visually simple while still giving the user fine-grained tools?
+        </div>
+        -->
+
+        <br>
+
+        <div class="info-box-2 caption">
+            <!-- Row [3] Collage as the interface metaphor (hidden for now)
+            <div class="info-box-2-left">
+                [3] Collage as the interface metaphor.
+                [full text (hidden for now)
+                [3] I didn't want to just make a general purpose online paint tool &mdash; instead, I was more interested in evoking a sort of digital collage experience.
+                To that end, I wanted to keep the interface <span class="blue">visually simple</span> and <span class="blue">immediately understandable</span>,
+                akin to a table with collage supplies strewn across it.
+                ]
+            </div>
+            <div class="info-box-2-right">
+                <img src="../img/zine/collaging.webp" class="wide" alt="Hands collaging with paper cutouts, scissors and glue on a table" loading="lazy" decoding="async">
+            </div>
+            -->
+
+            <div class="info-box-2-left">
+                [1] I wanted to create a simple, grounded interface inspired by the clutter and texture of a real workspace. By 
+                limiting the tool palette to immediately recognizable items (a sharpie, highlighter, etc.), the design encourages 
+                messiness and exploration rather than pixel-perfeection.
+            </div>
+            <div class="info-box-2-right">
+                <video class="project-video lazy-video" data-src="../img/zinemachine-full.mp4" poster="../img/zinemachine-full.jpg" muted loop playsinline preload="none"></video>
+            </div>
+
+            <div class="info-box-2-left">
+                [2] Three initial ideas for the zine creation interface.
+                <!-- original text of the four sketch rows (hidden for now)
+                [4] My first idea was a <span class="blue">freeform clipping-mask-based interface</span>, where the user could drag around images, text, and the page borders themselves, creating a new way of composing layouts. <br><br> However, I found this a bit too unstructured and not immediately intuitive.
+                [5] Next, I went to the other end of the spectrum and mocked up a much more <span class="blue">standard design interface</span>. The left column would contain collage elements (e.g. existing images and text), whereas the right column would include various collage tools reminiscent of physical tools, such as scissors, a "glue stick," and pens and pencils. <br><br> However, I thought that this design was a bit too on the nose, and it was a little too busy.
+                [6] Finally, I settled on a <span class="blue">happy medium</span> in which the user would have access to a limited set of collage tools and media. The pages would be laid out in such a way that still enabled interesting clipping-mask-based interactions and animations.
+                [7] Currently, I'm implementing a low-fidelity prototype using p5.js, which I will use to test with a couple users and determine how I want the central tools panel to look. Updates soon! <br><br> <span class="italic">Ideas for the central tools panel, inspired by the aesthetic of DJ boards.</span>
+                -->
+            </div>
+            <div class="info-box-2-right">
+                <div class="sketch-grid">
+                    <img src="../img/zine/sketch1.png" class="sketch" alt="Sketch of a freeform clipping-mask interface" loading="lazy" decoding="async">
+                    <img src="../img/zine/sketch2.png" class="sketch" alt="Sketch of a standard three-column design interface" loading="lazy" decoding="async">
+                    <img src="../img/zine/sketch3.png" class="sketch" alt="Sketch of the final interface layout with a central tools panel" loading="lazy" decoding="async">
+                    <div class="sketch-pair">
+                        <img src="../img/zine/sketchctrl-top.png" class="sketch" alt="Sketch of a tools panel with tool buttons either side of an image circle" loading="lazy" decoding="async">
+                        <img src="../img/zine/sketchctrl-bottom.png" class="sketch" alt="Sketch of a tools panel with sliders and reset and save buttons, inspired by DJ boards" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    </div>
+
+    <!-- This personal project is currently in the implementation and prototyping phase. -->
+</body>
+</html>

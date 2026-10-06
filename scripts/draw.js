@@ -5,12 +5,20 @@ let windowHeight;   // 898 on this laptop
 let oldX = -1
 let oldY = -1
 
+// how visible the mouse trail is, 0-255 (lower = fainter)
+const TRAIL_ALPHA = 28
+
+// canvas background follows --bg from styles/theme.css
+let bgRGB = [255, 255, 255]
+
 function setup() {
+    bgRGB = color(getComputedStyle(document.documentElement).getPropertyValue('--bg').trim()).levels
+
     setAndCalculateDimensions();
     // Create canvas
     createCanvas(windowWidth, windowHeight);
-    stroke("#7689dbff")
-    fill("#5d73d4")
+    stroke(190, 213, 232, TRAIL_ALPHA)
+    fill("#afc2d4")
 }
 
 const strokeMin = 1
@@ -22,7 +30,7 @@ const threshold = 0.1
 const easing = 0.1
 
 function draw() {
-    background(255,255,255,10);
+    background(bgRGB[0], bgRGB[1], bgRGB[2], 10);
 
     let newX = (mouseX-oldX) * easing + oldX
     let newY = (mouseY-oldY) * easing + oldY
@@ -50,9 +58,10 @@ function draw() {
     }
 }
 
-function mouseClicked() {
-    background(255, 255, 255, 255)
-}
+// clears the canvas on click (disabled)
+// function mouseClicked() {
+//     background(bgRGB[0], bgRGB[1], bgRGB[2], 255)
+// }
 
 function windowResized() {
     setAndCalculateDimensions();
