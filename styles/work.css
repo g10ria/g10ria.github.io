@@ -136,3 +136,16 @@ body.work-page {
 .work-page .work-item.tooltip-only:hover .work-title {
     color: inherit;
 }
+
+/* touch screens have no hover, so a tooltip-only card shows its note as a visible line under the tag line instead
+   (the note is the card's data-description, the same text the tooltip shows with a mouse) */
+@media (hover: none) {
+    .work-page .work-item.tooltip-only::after {
+        content: attr(data-description);
+        display: block;
+        margin-top: 10px;
+        font-size: 10pt;
+        line-height: 1.45;
+        opacity: 0.8;
+    }
+}
